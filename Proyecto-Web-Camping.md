@@ -1,4 +1,4 @@
-![Logo de la Empresa](Camping-logotipo_resized.png)
+![Logo de la Empresa](img/Camping-logotipo_resized.png)
 
 # Camping Olontigi Nature
 
@@ -13,13 +13,82 @@ He optado por este logo para intentar transmitir a los posibles clientes un mens
 
 ## Colores
 He elegido los siguientes colores para nuestra página:
-+ **Tonalidades de Verde**: Al ser un color asociado con la naturaleza y la frescura. Será el color dominante para transmitir la sensación de tranquilidad, serenidad y de estar en un entorno natural.
++ **Verde**: Al ser un color asociado con la naturaleza y la frescura. Será el color dominante para transmitir la sensación de tranquilidad, serenidad y de estar en un entorno natural.
 + **Blanco**: Para destacar la claridad y la limpieza, lo que es esencial en un camping donde se espera un entorno limpio y ordenado.
++ **Gris**: He elegido el gris como tercer color, porque lo considero un color neutral que puede ser un buen complemento para los colores anteriormente mencionados.
+
+![Captura Colores](img/Colores-Elegidos.png)
+
+[Documento HTML](html/colores.html)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores Elegidos</title>
+    <link rel="stylesheet" type="text/css" href="../css/colores.css">
+
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="verde">
+            <h1>#a8bc7c</h1>
+        </div>
+        <div class="blanco">
+            <h1>#FFFFFF</h1>
+        </div>
+        <div class="gris">
+            <h1>#eeecdc</h1>
+        </div>
+    </div>
+</body>
+
+</html>
+
+```
+[Documento CSS](css/colores.css)
+
+```css
+.contenedor {
+    width: 100%;
+    max-height: 1000px;
+    justify-content: space-around;
+    top: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor>div {
+    border: 1px solid black;
+    width: 15%;
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.verde {
+    background-color: #a8bc7c;
+}
+
+.blanco {
+    background-color: #FFFFFF;
+}
+
+.gris {
+    background-color: #eeecdc;
+}
+
+```
 
 ## Alojamientos
-+ **Parcelas para tiendas de campaña**
-+ **Parcelas para caravanas**
-+ **Cabañas nórdicas**
++ **Parcelas para tiendas de campaña y caravanas**
++ **Alquiler de caravanas**
++ **Alquiler de tiendas de campaña**
++ **Cabañas**
 
 ## Instalaciones
 Entre nuestras instalaciones contamos con:
