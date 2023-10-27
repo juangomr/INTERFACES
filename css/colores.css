@@ -1,28 +1,28 @@
 .contenedor {
-    width: 100%;
-    max-height: 1000px;
-    justify-content: space-around;
-    top: 50%;
-    align-items: center;
-    text-align: center;
+  width: 100%;
+  max-height: 1000px;
+  justify-content: space-around;
+  top: 50%;
+  align-items: center;
+  text-align: center;
 }
 
-.contenedor>div {
-    border: 1px solid black;
-    width: 15%;
-    height: 200px;
-    display: inline-block;
-    margin: 10px;
+.contenedor > div {
+  border: 1px solid black;
+  width: 15%;
+  height: 200px;
+  display: inline-block;
+  margin: 10px;
 }
 
 .verde {
-    background-color: #a8bc7c;
+  background-color: #485c54;
 }
 
 .blanco {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .gris {
-    background-color: #eeecdc;
+  background-color: #efede8;
 }
