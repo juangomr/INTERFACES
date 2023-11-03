@@ -1,0 +1,14 @@
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #6dbe45;
+}
+h1 {
+  text-align: center;
+  background-color: #a8bc7c;
+}
+h2 {
+  text-align: center;
+  background-color: #8cc63f;
+}
