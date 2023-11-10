@@ -1,0 +1,36 @@
+.flex_item {
+  width: 10%;
+}
+
+.fas,
+.fa-book {
+  color: green;
+}
+
+.flex_contenedor {
+  text-align: center;
+}
+
+h1,
+p {
+  font-size: 20px;
+}
+
+.flex_contenedor .flex_item,
+h1 {
+  text-transform: uppercase;
+}
+
+.flex_contenedor .flex_item p {
+  font-weight: bold;
+}
+
+/*.flex_contenedor p {
+  color: yellow;
+}*/
+
+.fas,
+.fa-globe ~ .far,
+.fa-file-alt p {
+  color: red;
+}
