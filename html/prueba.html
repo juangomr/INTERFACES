@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rango de Fechas</title>
+    <style>
+        #fechaEntrada,
+        #fechaSalida {
+            width: 150px;
+            margin-right: 10px;
+        }
+
+        #rangoFechas {
+            width: 320px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script>
+        $(function () {
+            // Obtener la fecha actual
+            var fechaActual = new Date();
+
+            // Establecer la fecha de entrada como la fecha actual
+            $("#fechaEntrada").datepicker({
+                dateFormat: 'yy-mm-dd',
+                defaultDate: fechaActual,
+                onSelect: function () {
+                    actualizarRangoFechas();
+                }
+            });
+
+            // Calcular la fecha de salida (2 días después de la fecha de entrada)
+            var fechaSalida = new Date();
+            fechaSalida.setDate(fechaActual.getDate() + 2);
+
+            // Establecer la fecha de salida
+            $("#fechaSalida").datepicker({
+                dateFormat: 'yy-mm-dd',
+                defaultDate: fechaSalida,
+                onSelect: function () {
+                    actualizarRangoFechas();
+                }
+            });
+
+            // Función para actualizar el campo de texto con el rango de fechas
+            function actualizarRangoFechas() {
+                var fechaEntrada = $("#fechaEntrada").datepicker("getDate");
+                var fechaSalida = $("#fechaSalida").datepicker("getDate");
+
+                if (fechaEntrada && fechaSalida) {
+                    $("#rangoFechas").val($.datepicker.formatDate('yy-mm-dd', fechaEntrada) + " | " + $.datepicker.formatDate('yy-mm-dd', fechaSalida));
+                }
+            }
+
+            // Inicializar el rango de fechas al cargar la página
+            actualizarRangoFechas();
+        });
+    </script>
+</head>
+
+<body>
+
+    <label for="fechaEntrada">Fecha de Entrada:</label>
+    <input type="date" id="fechaEntrada">
+
+    <label for="fechaSalida">Fecha de Salida:</label>
+    <input type="date" id="fechaSalida">
+
+</body>
+
+</html>
