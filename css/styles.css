@@ -8,40 +8,11 @@ font-family: 'Source Sans 3', sans-serif;*/
   padding: 0;
 }
 
-#video {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 85%;
-  z-index: -10;
-  visibility: visible;
-  background-size: cover;
-  object-fit: cover;
-}
-p {
-  color: white;
-  text-shadow: 4px 4px 4px #333;
-  text-align: center;
-  margin-top: 400px;
-  font-family: "Open Sans", sans-serif;
-  font-size: xx-large;
-}
-
-button {
-  background-color: white;
-  border-radius: 2rem;
-  height: 50px;
-  width: 7%;
-  font-weight: bolder;
-}
-
 nav ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   gap: 20px;
-  padding: 0.5em;
   font-family: "Roboto", sans-serif;
   border: 1px solid black;
   background-color: #ffffff;
@@ -58,28 +29,33 @@ nav ul {
   width: 7%;
   font-weight: bolder;
   border-color: #485c54;
-  color: #485c54;
-  transition: color 0.3s;
+  transition: color 1s;
 }
 
 .botonReserva:hover {
-  background-color: #efede8;
+  background-color: #b5bfb9;
+  font-size: larger;
 }
 
+.fa-solid {
+  color: #485c54;
+}
 .fa-solid:hover {
   cursor: pointer;
 }
 
 li > a {
+  color: black;
   text-decoration: none;
   text-align: center;
-  font-weight: 700;
+  font-weight: 900;
   transition: color 0.3s;
 }
 
 a:hover {
   cursor: pointer;
   color: #485c54;
+  font-weight: bold;
 }
 
 .logo {
@@ -91,27 +67,79 @@ a:hover {
   cursor: pointer;
 }
 
+#video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 90%;
+  z-index: -10;
+  visibility: visible;
+  background-size: cover;
+  object-fit: cover;
+}
+
+p {
+  color: white;
+  text-shadow: 4px 4px 4px #333;
+  text-align: center;
+  margin-top: 400px;
+  font-family: "Open Sans", sans-serif;
+  font-size: xx-large;
+}
+
 .containerVideo {
   width: 100%;
-  height: 707px;
+  height: 765px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.containerBotonesVideo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+}
+
+.containerBotonesVideo > * {
+  width: 70%;
+  height: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.containerBotonesVideo :first-child {
+  border-radius: 25px 0px 0px 25px;
+}
+
+.containerBotonesVideo :last-child {
+  border-radius: 0px 25px 25px 0px;
+  font-weight: bold;
+  background-color: #ffd42c;
+}
+
 .container3 {
   display: flex;
   width: 100%;
-  height: 150px;
-  border: 1px solid black;
+  height: 70px;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
+  gap: 2em;
+  padding-right: 3em;
 }
 
-input {
-  width: 15%;
-  height: 3rem;
+.container3 > * {
+  background-color: #b5bfb9;
+  color: #485c54;
+  border-radius: 2rem;
+  height: 50px;
+  width: 7%;
+  font-weight: bolder;
+  border: 2px solid #485c54;
+  transition: color 1s;
 }

@@ -19,6 +19,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <header>
@@ -29,13 +30,13 @@
             src="../img/logotipo-verde.png"
             alt="Logo del Camping"
           />
-          <li><a>Entorno</a></li>
-          <li><a>Alojamientos</a></li>
-          <li><a>Instalaciones</a></li>
-          <li><a>Actividades</a></li>
+          <li><a href="#">Entorno</a></li>
+          <li><a href="#">Alojamientos</a></li>
+          <li><a href="#">Instalaciones</a></li>
+          <li><a href="#">Actividades</a></li>
           <button class="botonReserva" type="button">RESERVAR</button>
           <div class="iconoMundo">
-            <i class="fa-solid fa-globe fa-2xl" style="color: #458c54"></i>
+            <i class="fa-solid fa-globe fa-2xl"></i>
           </div>
         </ul>
       </nav>
@@ -43,7 +44,25 @@
     <section>
       <div class="containerVideo">
         <div>
-          <p>Descubre la belleza de la Naturaleza</p>
+
+          <p class="slogan">Descubre la belleza de la Naturaleza</p>
+
+          <div class="containerBotonesVideo">
+
+            <input type="date"/>
+            <input type="date" value="fecha"/>
+
+            <select id="alojamientos" name="alojamientos">
+              <option value="Alojamientos">Tipo alojamiento</option>
+              <option value="parcela">Parcelas</option>
+              <option value="tienda">Tiendas</option>
+              <option value="bungalows">Bungalows</option>
+            </select>
+
+            <button type="button">VER PRECIOS</button>
+
+          </div>
+        </div>
         </div>
 
         <video id="video" loop autoplay preload muted>
@@ -56,17 +75,13 @@
     </section>
     <section>
       <div class="container3">
-        <input type="date" />
-        <input type="date" />
-        <button>VER PRECIOS</button>
         <button><i class="fa-solid fa-location-dot fa-2xl"></i></button>
         <button>
-          <i class="fa-solid fa-phone fa-2xl"></i><a tel:+955 75 06 15></a>
+          <i class="fa-solid fa-phone fa-2xl"></i>
         </button>
         <button>
           <i class="fa-brands fa-whatsapp fa-2xl"
-            ><a tel:+34 627 09 78 10></a
-          ></i>
+            ></i>
         </button>
       </div>
     </section>
