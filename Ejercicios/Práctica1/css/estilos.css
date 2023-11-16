@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  width: 22.5%;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 100px;
+  height: 55px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.caja {
+  margin-top: 1rem;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.caja p {
+  margin-block-end: 0px;
+  margin-block-start: 5px;
+  padding-left: 1.6rem;
+}
+
+.caja:hover {
+  margin-top: 1rem;
+  border: 1px solid #5b7fa1;
+  background-color: #f0f9ff;
+  padding: 1rem;
+}
+
+.cajaFinal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h2 {
+  margin-block-end: 0em;
+}
+
+.cajaFinal > input {
+  margin-top: 0.5rem;
+  width: 95%;
+  height: 2rem;
+  font-size: larger;
+  border-radius: 5px;
+  border-color: lightgray;
+  padding-left: 0.85rem;
+  font-style: italic;
+}
+
+.cajaFinal > button {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  background-color: #1973cb;
+  width: 100%;
+  height: 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  font-size: larger;
+  text-shadow: 1px 1px 2px black;
+  border-color: #1973cb;
+}
+
+.cajaFinal > p {
+  font-family: Arial, Helvetica, sans-serif;
+}
