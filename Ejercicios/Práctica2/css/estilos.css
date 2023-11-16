@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid black;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.navegador {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navegador>p {
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navegador>h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mitad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid lightgray;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.mitad>p {
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+}
+
+
+.icono {
+  width: 33%;
+  height: 3rem;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.icono>input {
+  border: none;
+  color: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  width: 60%;
+}
+
+.fa-arrow-alt-circle-right{
+  color: #c2c2c2 ;
+  font-size: x-large;
+}
+
+.fa-expand-alt{
+ color:#477bb6; 
+}
+
+.fa-users.fa-lg{
+  color: #477bb6;
+  font-size: xx-large;
+  margin-top: 1rem;
+}
+
+.mitad > a{
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1rem;
+}
+
+.texto{
+  width: 30%;
+  text-align: center;
+}
+
+.texto > a {
+  text-decoration: none;
+}
+
+.texto > p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+
+}
