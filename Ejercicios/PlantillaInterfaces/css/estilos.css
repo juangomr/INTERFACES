@@ -2,3 +2,10 @@
   color: blue;
   font-size: xx-large;
 }
+
+p::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f007";
+  color: blue
+}
