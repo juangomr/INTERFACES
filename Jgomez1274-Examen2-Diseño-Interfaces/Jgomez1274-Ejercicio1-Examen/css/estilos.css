@@ -1,0 +1,112 @@
+/*ejercicio1*/
+body {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  background-color: #212530;
+  color: white;
+  width: 40%;
+}
+
+.navegador {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.navegador > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+
+.navegador ul > li {
+  list-style: none;
+  padding: 2rem;
+  font-size: x-large;
+}
+
+.navegador ul > li:hover {
+  background-color: #575760;
+}
+
+.primero {
+  border-bottom: 2px solid #a9aaf9;
+  padding-bottom: 1rem;
+}
+
+.cuerpo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 12rem;
+}
+
+.p1 {
+  font-size: larger;
+}
+
+label {
+  font-size: small;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 75%;
+  height: 3rem;
+}
+
+.navegador2 > ul {
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+  height: 5rem;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 0 !important;
+}
+
+.navegador2 ul li:first-child {
+  font-size: larger;
+  background-color: #53536e;
+}
+
+.navegador2 li > a {
+  color: #a9aaf9;
+  font-size: small;
+}
+
+.google {
+  width: 50%;
+  border-radius: 0.5rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.facebook {
+  background-color: #1877f2;
+  height: 2rem;
+  margin-bottom: 2rem;
+  width: 50%;
+  border-radius: 0.5rem;
+  color: white;
+  padding-left: 2rem;
+}
+
+img {
+  width: 4%;
+  position: relative;
+  top: 2rem;
+  left: 0.5rem;
+}
