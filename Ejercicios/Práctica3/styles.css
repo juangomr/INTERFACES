@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+}
+.main {
+  background-color: #28242c;
+  padding: 1em;
+  display: flex;
+}
+
+.izquierda {
+  padding: 1em;
+  width: 25%;
+}
+
+.izquierda form > h1 {
+  letter-spacing: 0.1em;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.entradas {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 2em;
+}
+
+.entradas > p {
+  color: lightgray;
+  line-height: 0;
+  margin-block-end: 0.7em;
+  font-family: sans-serif;
+}
+.entradas > input {
+  background-color: #38343c;
+  border: none;
+  border-radius: 5px;
+  height: 3em;
+}
+
+.entradas2 select {
+  background-color: #38343c;
+  border: none;
+  border-radius: 5px;
+  height: 3em;
+  color: white;
+  padding-left: 0.5em;
+  font-family: sans-serif;
+}
+
+.captcha {
+  width: 75%;
+  border: 0.5px solid lightgray;
+  border-radius: 5px;
+  background-color: #242424;
+  display: flex;
+  padding: 0.5em;
+}
+
+.captcha1 {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.captcha1 > input {
+  height: 2em;
+  width: 2em;
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+  margin-right: 1em;
+}
+
+.captcha1 > p {
+  color: white;
+  font-family: sans-serif;
+}
+
+.captcha2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 40%;
+}
+
+.captcha2 > img {
+  width: 4em;
+  height: 4em;
+}
+
+.captcha2 > p {
+  color: white;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  margin: 0;
+}
+
+.derecha {
+  border: 1px solid #38343c;
+  padding: 1em;
+  height: 400px;
+  overflow: auto;
+}
+
+.derecha > h1 {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.derecha > h2,
+h3,
+h4 {
+  color: lightgray;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.derecha > ol {
+  padding-inline-start: 15px;
+}
+
+.derecha::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border: none;
+}
+.derecha::-webkit-scrollbar {
+  background-color: black;
+}
+
+.derecha li {
+  color: white;
+  font-family: sans-serif;
+  font-size: small;
+}
+
+.terminos {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.terminos > input {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.terminos > p {
+  color: lightgray;
+  font-family: sans-serif;
+}
+
+button {
+  width: 12%;
+  height: 2em;
+  font-family: sans-serif;
+  background: linear-gradient(to right, #1788e3, #2717e3);
+  font-size: large;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
