@@ -1,73 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Camping Olontigi Nature | Descubre la belleza de la naturaleza
-    </title>
-    <link rel="shortcut icon" href="../img/icono-verde.png" />
-    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <img
-            class="logo"
-            src="../img/logotipo-verde.png"
-            alt="Logo del Camping"
-          />
-          <li><a href="#">Entorno</a></li>
-          <li><a href="#">Alojamientos</a></li>
-          <li><a href="#">Instalaciones</a></li>
-          <li><a href="#">Actividades</a></li>
-          <button class="botonReserva" type="button">RESERVAR</button>
-          <div class="iconoMundo">
-            <i class="fa-solid fa-globe fa-2xl"></i>
-          </div>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <div class="containerVideo">
-        <div class="container2Video">
-          <div>
-            <p class="slogan">Descubre la belleza de la naturaleza</p>
-          </div>
-          <div class="containerBotonesVideo">
-            <input type="date" />
-            <input type="date" value="fecha" />
-            <select id="alojamientos" name="alojamientos">
-              <option value="Alojamientos">Tipo alojamiento</option>
-              <option value="parcela">Parcelas</option>
-              <option value="tienda">Tiendas</option>
-              <option value="bungalows">Bungalows</option>
-            </select>
-            <button type="button">VER PRECIOS</button>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Camping Olontigi Nature | Descubre la belleza de la naturaleza
+  </title>
+  <link rel="shortcut icon" href="../img/icono-verde.png" />
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <img class="logo" src="../img/logotipo-verde.png" alt="Logo del Camping" />
+      <li><a href="#">Entorno</a></li>
+      <li><a href="#">Alojamientos</a></li>
+      <li><a href="#">Instalaciones</a></li>
+      <li><a href="#">Actividades</a></li>
+
+      <a class="enlaceBoton" target="_blank" href="#">
+        <div class="botonReserva">
+          <span>RESERVAR</span>
         </div>
-        <video id="video" loop autoplay preload muted>
-          <source
-            src="../video/VideoCamping.mp4"
-            type='video/ogg; codecs="theora,vorbis"'
-          />
-        </video>
+      </a>
+
+      <div class="iconoMundo">
+        <i class="fa-solid fa-globe fa-2xl"></i>
       </div>
-    </section>
-    <section>
+    </ul>
+  </nav>
+  <section>
+    <div class="containerVideo">
+      <div class="container2Video">
+        <div>
+          <p class="slogan">Descubre la belleza de la naturaleza</p>
+        </div>
+        <div class="containerBotonesVideo">
+          <input type="date" />
+          <input type="date" value="fecha" />
+          <select id="alojamientos" name="alojamientos">
+            <option value="Alojamientos">Tipo alojamiento</option>
+            <option value="parcela">Parcelas</option>
+            <option value="tienda">Tiendas</option>
+            <option value="bungalows">Bungalows</option>
+          </select>
+          <button type="button">VER PRECIOS</button>
+        </div>
+      </div>
+      <video id="video" loop autoplay preload muted>
+        <source src="../video/VideoCamping.mp4" type='video/ogg; codecs="theora,vorbis"' />
+      </video>
+    </div>
+  </section>
+  <section>
+    <div class="container3Ext">
       <div class="container3">
         <div class="botonExterior">
           <a class="enlaceBoton" target="_blank" href="#">
@@ -86,11 +79,7 @@
           </a>
         </div>
         <div class="botonExterior">
-          <a
-            class="enlaceBoton"
-            target="blank"
-            href="https://api.whatsapp.com/send?phone=34644725313&text=Hola!"
-          >
+          <a class="enlaceBoton" target="blank" href="https://api.whatsapp.com/send?phone=34644725313&text=Hola!">
             <div class="botonInterior">
               <span>671 06 44 12</span>
               <i class="fa-brands fa-whatsapp fa-xl"></i>
@@ -98,46 +87,45 @@
           </a>
         </div>
       </div>
-    </section>
-    <section>
-      <div class="container4exterior">
-        <h1>EXPERIENCIA OLONTIGI</h1>
-        <h2>Garantía de unas vacaciones inolvidables</h2>
-        <div class="container4">
-          <div class="item-1">
-            item 1
-            <img
-              class="item2"
-              src="../img/dog-2301935_1280.jpg"
-              alt="Logo del Camping"
-            />
+    </div>
+  </section>
+  <section>
+    <div class="container4exterior">
+      <h1>EXPERIENCIA OLONTIGI</h1>
+      <h2>Garantía de unas vacaciones inolvidables</h2>
+      <div class="container4">
+        <div class="item-1">
+          <div class="containerItem2">
+            <img class="item2" src="../img/suspension-bridge-4765742_1280.jpg" alt="Logo del Camping" />
           </div>
-          <div class="item-1">
-            item 2
-            <img
-              class="item2"
-              src="../img/dog-2301935_1280.jpg"
-              alt="Logo del Camping"
-            />
+          <h1 class="texto">ENTORNO</h1>
+        </div>
+        <div class="item-1">
+          <div class="containerItem2">
+            <img class="item2" src="../img/kayak-1560642_1280.jpg" alt="Logo del Camping" />
           </div>
-          <div class="item-1">
-            item 3
-            <img
-              class="item2"
-              src="../img/dog-2301935_1280.jpg"
-              alt="Logo del Camping"
-            />
+          
+          <h1 class="texto">ACTIVIDADES</h1>
+        
+        <p class="p">ds</p>
+        </div>
+
+        <div class="item-1">
+          <div class="containerItem2">
+            <img class="item2" src="../img/swim-8110683_1280.jpg" alt="Logo del Camping" />
           </div>
-          <div class="item-1">
-            item 4
-            <img
-              class="item2"
-              src="../img/dog-2301935_1280.jpg"
-              alt="Logo del Camping"
-            />
+          <h1 class="texto">INSTALACIONES</h1>
+
+        </div>
+        <div class="item-1">
+          <div class="containerItem2">
+            <img class="item2" src="../img/dog-2301935_1280.jpg" alt="Logo del Camping" />
           </div>
+          <h1 class="texto">MASCOTAS</h1>
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+</body>
+
 </html>
