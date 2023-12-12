@@ -3,131 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rango de Fechas</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Efecto de Ampliación</title>
     <style>
-      #fechaEntrada,
-      #fechaSalida {
-        width: 150px;
-        margin-right: 10px;
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
       }
 
-      #rangoFechas {
-        width: 320px;
-        padding: 5px;
-        border: 1px solid #ccc;
-        font-size: 14px;
+      .container {
+        text-align: center;
+        margin-top: 50px;
       }
 
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-
-      .dropbtn {
-        background-color: #3498db;
-        color: white;
+      input {
         padding: 10px;
         font-size: 16px;
-        border: none;
-        cursor: pointer;
+        z-index: 2;
       }
 
-      .dropdown-content {
+      .overlay {
         display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
         z-index: 1;
       }
-
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-
-      .dropdown-content a:hover {
-        background-color: #ddd;
-      }
-
-      /* Muestra el contenido del menú desplegable cuando el checkbox está marcado */
-      #dropdown-toggle:checked + .dropbtn + .dropdown-content {
-        display: block;
-      }
     </style>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
-    />
-    <script>
-      $(function () {
-        // Obtener la fecha actual
-        var fechaActual = new Date();
-
-        // Establecer la fecha de entrada como la fecha actual
-        $("#fechaEntrada").datepicker({
-          dateFormat: "yy-mm-dd",
-          defaultDate: fechaActual,
-          onSelect: function () {
-            actualizarRangoFechas();
-          },
-        });
-
-        // Calcular la fecha de salida (2 días después de la fecha de entrada)
-        var fechaSalida = new Date();
-        fechaSalida.setDate(fechaActual.getDate() + 2);
-
-        // Establecer la fecha de salida
-        $("#fechaSalida").datepicker({
-          dateFormat: "yy-mm-dd",
-          defaultDate: fechaSalida,
-          onSelect: function () {
-            actualizarRangoFechas();
-          },
-        });
-
-        // Función para actualizar el campo de texto con el rango de fechas
-        function actualizarRangoFechas() {
-          var fechaEntrada = $("#fechaEntrada").datepicker("getDate");
-          var fechaSalida = $("#fechaSalida").datepicker("getDate");
-
-          if (fechaEntrada && fechaSalida) {
-            $("#rangoFechas").val(
-              $.datepicker.formatDate("yy-mm-dd", fechaEntrada) +
-                " | " +
-                $.datepicker.formatDate("yy-mm-dd", fechaSalida)
-            );
-          }
-        }
-
-        // Inicializar el rango de fechas al cargar la página
-        actualizarRangoFechas();
-      });
-    </script>
   </head>
-
   <body>
-    <label for="fechaEntrada">Fecha de Entrada:</label>
-    <input type="date" id="fechaEntrada" />
+    <script>
+      function ampliarInput() {
+        var overlay = document.getElementById("overlay");
+        overlay.style.display = "block";
 
-    <label for="fechaSalida">Fecha de Salida:</label>
-    <input type="date" id="fechaSalida" />
-    <div class="dropdown">
-      <input type="checkbox" id="dropdown-toggle" class="dropbtn" />
-      <label for="dropdown-toggle" class="dropbtn">Botón</label>
+        var input = document.getElementById("ampliarInput");
+        input.style.width = "300px";
+        input.style.transition = "width 0.5s";
 
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#">Opción 1</a>
-        <a href="#">Opción 2</a>
-        <a href="#">Opción 3</a>
-        <!-- Puedes agregar más opciones según sea necesario -->
-      </div>
+        input.addEventListener("blur", function () {
+          overlay.style.display = "none";
+          input.style.width = "initial";
+        });
+      }
+    </script>
+    <div class="overlay" id="overlay"></div>
+    <div class="container">
+      <input type="text" id="ampliarInput" onclick="ampliarInput()" />
     </div>
-
-    <script src="script.js"></script>
   </body>
 </html>
