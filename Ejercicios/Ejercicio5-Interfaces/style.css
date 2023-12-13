@@ -1,0 +1,24 @@
+.main {
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+  border: 1px solid black;
+}
+
+.caja1 {
+  width: 50%;
+  border-bottom: 2em dashed #999999;
+  background-color: #4caf50;
+  padding: 1em;
+  border-right: 2em solid #000000;
+}
+
+.caja2 {
+  width: 75%;
+  border-left: 2em solid black;
+  background-color: #000000;
+  padding: 2em;
+  margin-top: 5em;
+  border-bottom: 1em solid #4caf50;
+  border-top: 1em solid #4caf50;
+}
