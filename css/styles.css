@@ -42,7 +42,6 @@ nav > ul {
 
 .botonReserva:hover {
   transition: background-color 0.3s ease-in, color 0.3s ease-in;
-  transition: 1s;
   color: #000;
   background-color: #ffd42c;
   border: 2px solid #ffd42c;
@@ -324,4 +323,45 @@ a:hover {
 #mapa {
   height: 400px;
   width: 100%;
+}
+
+.container6ext {
+  width: 100%;
+  height: auto;
+  padding: 3em;
+  background-color: #efede8;
+  color: #485c54;
+  display: flex;
+  flex-direction: column;
+}
+
+.container6int {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.container6 {
+  width: calc(100% / 5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.icono6 {
+  font-size: 3rem;
+  transition: all 0.5s ease-out;
+}
+
+.icono6:hover {
+  font-size: 4rem;
+}
+
+.parrafo6 {
+  width: 50%;
 }
