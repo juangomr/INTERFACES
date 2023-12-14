@@ -213,7 +213,7 @@ a:hover {
 .container4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.8fr;
+  grid-template-rows: 0.9fr;
   gap: 2em;
   grid-template-areas: "1 2 3 4";
   z-index: 8;
