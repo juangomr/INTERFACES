@@ -1,361 +1,441 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Camping Olontigi Nature | Descubre la belleza de la naturaleza
+    </title>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgO4RHfFL2jeebWxd782foattL9GDl6co&callback=inicializarMapa"
+    ></script>
+    <link rel="shortcut icon" href="../img/icono-verde.png" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
-    Camping Olontigi Nature | Descubre la belleza de la naturaleza
-  </title>
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgO4RHfFL2jeebWxd782foattL9GDl6co&callback=inicializarMapa"></script>
-  <link rel="shortcut icon" href="/img/icono-verde.png" />
-  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="/js/script.js"></script>
-</head>
+  <body>
+    <nav>
+      <ul>
+        <img
+          class="logo"
+          src="../img/logotipo-verde.png"
+          alt="Logo del Camping"
+        />
+        <li><a href="#">Entorno</a></li>
+        <li><a href="#">Alojamientos</a></li>
+        <li><a href="#">Instalaciones</a></li>
+        <li><a href="#">Actividades</a></li>
 
-<body>
-  <nav>
-    <ul>
-      <img class="logo" src="../img/logotipo-verde.png" alt="Logo del Camping" />
-      <li><a href="#">Entorno</a></li>
-      <li><a href="#">Alojamientos</a></li>
-      <li><a href="#">Instalaciones</a></li>
-      <li><a href="#">Actividades</a></li>
+        <a class="enlaceBoton" target="_blank" href="#">
+          <div class="botonReserva">
+            <span>RESERVAR</span>
+          </div>
+        </a>
 
-      <a class="enlaceBoton" target="_blank" href="#">
-        <div class="botonReserva">
-          <span>RESERVAR</span>
+        <div class="iconoMundo">
+          <i class="fa-solid fa-globe fa-2xl"></i>
         </div>
-      </a>
-
-      <div class="iconoMundo">
-        <i class="fa-solid fa-globe fa-2xl"></i>
-      </div>
-    </ul>
-  </nav>
-  <section>
-    <div class="containerVideo">
-      <div class="container2Video">
-        <div>
-          <p class="slogan">Camping, relax serenidad</p>
-        </div>
-        <div class="containerBotonesVideo">
-          <input type="date" />
-          <input type="date" value="fecha" />
-          <select id="alojamientos" name="alojamientos">
-            <option value="Alojamientos">Tipo alojamiento</option>
-            <option value="parcela">Parcelas</option>
-            <option value="tienda">Tiendas</option>
-            <option value="bungalows">Bungalows</option>
-          </select>
-          <button type="button">VER PRECIOS</button>
-        </div>
-      </div>
-      <video id="video" loop autoplay preload muted>
-        <source src="../video/VideoCamping.mp4" type='video/ogg; codecs="theora,vorbis"' />
-      </video>
-    </div>
-  </section>
-  <section>
-    <div class="container3Ext">
-      <div class="container3">
-        <div class="botonExterior">
-          <a class="enlaceBoton" target="_blank" href="#">
-            <div class="botonInterior">
-              <span>Contacto</span>
-              <i class="fa-solid fa-location-dot fa-xl"></i>
-            </div>
-          </a>
-        </div>
-        <div class="botonExterior">
-          <a class="enlaceBoton" target="blank" href="tel:+34955750677">
-            <div class="botonInterior">
-              <span>955 75 06 77</span>
-              <i class="fa-solid fa-phone fa-xl"></i>
-            </div>
-          </a>
-        </div>
-        <div class="botonExterior">
-          <a class="enlaceBoton" target="blank" href="https://api.whatsapp.com/send?phone=34644725313&text=Hola!">
-            <div class="botonInterior">
-              <span>671 06 44 12</span>
-              <i class="fa-brands fa-whatsapp fa-xl"></i>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="container4exterior">
-      <h1 class="titulo">EXPERIENCIA OLONTIGI</h1>
-      <p class="subtitulo">Garantía de unas vacaciones inolvidables</p>
-      <div class="container4">
-        <div class="item-1">
-          <div class="containerItem2">
-            <img class="item2" src="../img/suspension-bridge-4765742_1280.jpg" alt="Logo del Camping" />
-          </div>
-          <div class="containerTexto">
-            <h1 class="textoContainer4">ENTORNO</h1>
-            <p class="parrafoContainer4">
-              Disfruta de la serenidad de nuestros bosques, la frescura del
-              aire y el susurro de las hojas te transportarán a un mundo
-              aparte.
-            </p>
-          </div>
-        </div>
-        <div class="item-1">
-          <div class="containerItem2">
-            <img class="item2" src="../img/kayak-1914773_1920.jpg" alt="Logo del Camping" />
-          </div>
-          <div class="containerTexto">
-            <h1 class="textoContainer4">ACTIVIDADES</h1>
-
-            <p class="parrafoContainer4">
-              Nuestro camping tiene algo para ti. Desde itinerarios de
-              senderismo con vistas panorámicas hasta rutas de kayak para
-              disfrutar de momentos de adrenalina.
-            </p>
-          </div>
-        </div>
-
-        <div class="item-1">
-          <div class="containerItem2">
-            <img class="item2" src="../img/swim-8110683_1280.jpg" alt="Logo del Camping" />
-          </div>
-          <div class="containerTexto">
-            <h1 class="textoContainer4">INSTALACIONES</h1>
-            <p class="parrafoContainer4">
-              Nuestras instalaciones permiten combinar el relax, el deporte y
-              el ocio. Piscina, restaurante, zona deportiva... descubre
-              Camping Olontigi.
-            </p>
-          </div>
-        </div>
-        <div class="item-1">
-          <div class="containerItem2">
-            <img class="item2" src="../img/dog-2301935_1280.jpg" alt="Logo del Camping" />
-          </div>
-          <div class="containerTexto">
-            <h1 class="textoContainer4">MASCOTAS</h1>
-            <p class="parrafoContainer4">
-              Pasa tus vacaciones con la mejor compañia,¡la de tu mascota!
-              Están admitidas tanto en su alojamiento como en nuestras
-              instalaciones.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="container5ext">
-      <h1 class="titulo">DESCUBRE NUESTROS ALOJAMIENTOS</h1>
-      <p class="subtitulo">Tranquilidad, comodidad, desconexión</p>
-      <div class="container5int">
-        <div class="preSlider">
+      </ul>
+    </nav>
+    <section>
+      <div class="containerVideo">
+        <div class="container2Video">
           <div>
-            <img class="imgPreSlider" src="../img/Bunga-removebg-preview.png" alt="icono" />
+            <p class="slogan">Camping, relax serenidad</p>
           </div>
-          <div>
-            <p class="parrafoPreSlider">BUNGALOWS</p>
+          <div class="containerBotonesVideo">
+            <input type="date" />
+            <input type="date" value="fecha" />
+            <select id="alojamientos" name="alojamientos">
+              <option value="Alojamientos">Tipo alojamiento</option>
+              <option value="parcela">Parcelas</option>
+              <option value="tienda">Tiendas</option>
+              <option value="bungalows">Bungalows</option>
+            </select>
+            <button type="button">VER PRECIOS</button>
           </div>
         </div>
-        <div class="preSlider">
-          <img class="imgPreSlider" src="../img/Glamp-removebg-preview.png" alt="icono" />
-
-          <p class="parrafoPreSlider">TIENDAS</p>
-        </div>
-        <div class="preSlider">
-          <img class="imgPreSlider" src="/img/parcelas-removebg-preview.png" alt="icono" />
-          <p class="parrafoPreSlider">PARCELAS</p>
-        </div>
-        <div class="d-grid gap-2 col-3 mx-auto">
-          <button class="btn btn-primary" type="button">VER TODOS</button>
+        <video id="video" loop autoplay preload muted>
+          <source
+            src="../video/VideoCamping.mp4"
+            type='video/ogg; codecs="theora,vorbis"'
+          />
+        </video>
+      </div>
+    </section>
+    <section>
+      <div class="container3Ext">
+        <div class="container3">
+          <div class="botonExterior">
+            <a class="enlaceBoton" target="_blank" href="#">
+              <div class="botonInterior">
+                <span>Contacto</span>
+                <i class="fa-solid fa-location-dot fa-xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="botonExterior">
+            <a class="enlaceBoton" target="blank" href="tel:+34955750677">
+              <div class="botonInterior">
+                <span>955 75 06 77</span>
+                <i class="fa-solid fa-phone fa-xl"></i>
+              </div>
+            </a>
+          </div>
+          <div class="botonExterior">
+            <a
+              class="enlaceBoton"
+              target="blank"
+              href="https://api.whatsapp.com/send?phone=34644725313&text=Hola!"
+            >
+              <div class="botonInterior">
+                <span>671 06 44 12</span>
+                <i class="fa-brands fa-whatsapp fa-xl"></i>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-      
+    </section>
+    <section>
+      <div class="container4exterior">
+        <h1 class="titulo">EXPERIENCIA OLONTIGI</h1>
+        <p class="subtitulo">Garantía de unas vacaciones inolvidables</p>
+        <div class="container4">
+          <div class="item-1">
+            <div class="containerItem2">
+              <img
+                class="item2"
+                src="../img/suspension-bridge-4765742_1280.jpg"
+                alt="Logo del Camping"
+              />
+            </div>
+            <div class="containerTexto">
+              <h1 class="textoContainer4">ENTORNO</h1>
+              <p class="parrafoContainer4">
+                Disfruta de la serenidad de nuestros bosques, la frescura del
+                aire y el susurro de las hojas te transportarán a un mundo
+                aparte.
+              </p>
+            </div>
+          </div>
+          <div class="item-1">
+            <div class="containerItem2">
+              <img
+                class="item2"
+                src="../img/kayak-1914773_1920.jpg"
+                alt="Logo del Camping"
+              />
+            </div>
+            <div class="containerTexto">
+              <h1 class="textoContainer4">ACTIVIDADES</h1>
+
+              <p class="parrafoContainer4">
+                Nuestro camping tiene algo para ti. Desde itinerarios de
+                senderismo con vistas panorámicas hasta rutas de kayak para
+                disfrutar de momentos de adrenalina.
+              </p>
+            </div>
+          </div>
+
+          <div class="item-1">
+            <div class="containerItem2">
+              <img
+                class="item2"
+                src="../img/swim-8110683_1280.jpg"
+                alt="Logo del Camping"
+              />
+            </div>
+            <div class="containerTexto">
+              <h1 class="textoContainer4">INSTALACIONES</h1>
+              <p class="parrafoContainer4">
+                Nuestras instalaciones permiten combinar el relax, el deporte y
+                el ocio. Piscina, restaurante, zona deportiva... descubre
+                Camping Olontigi.
+              </p>
+            </div>
+          </div>
+          <div class="item-1">
+            <div class="containerItem2">
+              <img
+                class="item2"
+                src="../img/dog-2301935_1280.jpg"
+                alt="Logo del Camping"
+              />
+            </div>
+            <div class="containerTexto">
+              <h1 class="textoContainer4">MASCOTAS</h1>
+              <p class="parrafoContainer4">
+                Pasa tus vacaciones con la mejor compañia,¡la de tu mascota!
+                Están admitidas tanto en su alojamiento como en nuestras
+                instalaciones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
       <div class="container">
-        
-        <div class="swiper-container mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="/img/036-1536x1219.jpg">
-              <div class="card-description">
-                <div class="card-title">
-                  <h4>Descripción</h4>
-                </div>
-                <div class="card-text">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam dolorum quisquam harum
-                    soluta voluptate quod quia pariatur quasi, aspernatur </p>
-                </div>
-                <div class="card-icons">
-                  <i class="fa-solid fa-toilet"></i>
-                  <i class="fa-solid fa-paw"></i>
-                  <i class="fa-solid fa-people-group"></i>
-                  <p>lorem ipsum dolor sit</p>
-                </div>
+        <div class="container5ext">
+          <h1 class="titulo">DESCUBRE NUESTROS ALOJAMIENTOS</h1>
+          <p class="subtitulo">Tranquilidad, comodidad, desconexión</p>
+          <div class="container5int">
+            <div class="preSlider">
+              <div>
+                <img
+                  class="imgPreSlider"
+                  src="../img/Bunga-removebg-preview.png"
+                  alt="icono"
+                />
+              </div>
+              <div>
+                <p class="parrafoPreSlider">BUNGALOWS</p>
               </div>
             </div>
-            <div class="swiper-slide">
-              <img src="/img/palas-2-1250x1536.jpg">
-              <div class="card-description">
-                <div class="card-title">
-                  <h4>Descripción</h4>
-                </div>
-                <div class="card-text">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam dolorum quisquam harum
-                    soluta voluptate quod quia pariatur quasi, aspernatur </p>
-                </div>
-                <div class="card-icons">
-                  <i class="fa-solid fa-toilet"></i>
-                  <i class="fa-solid fa-paw"></i>
-                  <i class="fa-solid fa-people-group"></i>
-                  <p>lorem ipsum dolor sit</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="/img/Sauceda-2048x1365.jpg">
-              <div class="card-description">
-                <div class="card-title">
-                  <h4>Descripción</h4>
-                </div>
-                <div class="card-text">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam dolorum quisquam harum
-                    soluta voluptate quod quia pariatur quasi, aspernatur </p>
-                </div>
-                <div class="card-icons">
-                  <i class="fa-solid fa-toilet"></i>
-                  <i class="fa-solid fa-paw"></i>
-                  <i class="fa-solid fa-people-group"></i>
-                  <p>lorem ipsum dolor sit</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="/img/Tamaral.jpg">
-              <div class="card-description">
-                <div class="card-title">
-                  <h4>Descripción</h4>
-                </div>
-                <div class="card-text">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam dolorum quisquam harum
-                    soluta voluptate quod quia pariatur quasi, aspernatur </p>
-                </div>
-                <div class="card-icons">
-                  <i class="fa-solid fa-toilet"></i>
-                  <i class="fa-solid fa-paw"></i>
-                  <i class="fa-solid fa-people-group"></i>
-                  <p>lorem ipsum dolor sit</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="/img/WhatsApp-Image-2022-06-03-at-12.54.16-PM-2.jpeg">
-              <div class="card-description">
-                <div class="card-title">
-                  <h4>Descripción</h4>
-                </div>
-                <div class="card-text">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam dolorum quisquam harum
-                    soluta voluptate quod quia pariatur quasi, aspernatur </p>
-                </div>
-                <div class="card-icons">
-                  <i class="fa-solid fa-toilet"></i>
-                  <i class="fa-solid fa-paw"></i>
-                  <i class="fa-solid fa-people-group"></i>
-                  <p>lorem ipsum dolor sit</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <div class="preSlider">
+              <img
+                class="imgPreSlider"
+                src="../img/Glamp-removebg-preview.png"
+                alt="icono"
+              />
 
-      <!-- Swiper JS -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script src="/js/slider.js"></script>
+              <p class="parrafoPreSlider">TIENDAS</p>
+            </div>
+            <div class="preSlider">
+              <img
+                class="imgPreSlider"
+                src="../img/parcelas-removebg-preview.png"
+                alt="icono"
+              />
+              <p class="parrafoPreSlider">PARCELAS</p>
+            </div>
 
-    </div>
-  </section>
-  <section>
-    <div class="container6ext">
-      <h1 class="titulo">SERVICIOS E INSTALACIONES</h1>
-      <p class="subtitulo">
-        Todo lo que necesitas a tu disposición, sin tener que salir del
-        camping.
-      </p>
-      <div class="container6int">
-        <div class="container6">
-          <div class="icono6">
-            <i class="fa-solid fa-wifi"></i>
+            <button class="btn btn-primary btn-lg boton" type="button">
+              VER TODOS
+            </button>
           </div>
-          <div class="parrafo6">
-            <p class="subtitulo">
-              Servicios incluidos, Wifi, supermercado, animación infantil
-            </p>
+
+          <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../img/036-1536x1219.jpg" />
+                <div class="card-description">
+                  <div class="card-title">
+                    <h4>Descripción</h4>
+                  </div>
+                  <div class="card-text">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Totam dolorum quisquam harum soluta voluptate quod quia
+                      pariatur quasi, aspernatur
+                    </p>
+                  </div>
+                  <div class="card-icons">
+                    <i class="fa-solid fa-toilet"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-people-group"></i>
+                    <p>lorem ipsum dolor sit</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="../img/palas-2-1250x1536.jpg" />
+                <div class="card-description">
+                  <div class="card-title">
+                    <h4>Descripción</h4>
+                  </div>
+                  <div class="card-text">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Totam dolorum quisquam harum soluta voluptate quod quia
+                      pariatur quasi, aspernatur
+                    </p>
+                  </div>
+                  <div class="card-icons">
+                    <i class="fa-solid fa-toilet"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-people-group"></i>
+                    <p>lorem ipsum dolor sit</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="../img/Sauceda-2048x1365.jpg" />
+                <div class="card-description">
+                  <div class="card-title">
+                    <h4>Descripción</h4>
+                  </div>
+                  <div class="card-text">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Totam dolorum quisquam harum soluta voluptate quod quia
+                      pariatur quasi, aspernatur
+                    </p>
+                  </div>
+                  <div class="card-icons">
+                    <i class="fa-solid fa-toilet"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-people-group"></i>
+                    <p>lorem ipsum dolor sit</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="../img/Tamaral.jpg" />
+                <div class="card-description">
+                  <div class="card-title">
+                    <h4>Descripción</h4>
+                  </div>
+                  <div class="card-text">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Totam dolorum quisquam harum soluta voluptate quod quia
+                      pariatur quasi, aspernatur
+                    </p>
+                  </div>
+                  <div class="card-icons">
+                    <i class="fa-solid fa-toilet"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-people-group"></i>
+                    <p>lorem ipsum dolor sit</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../img/WhatsApp-Image-2022-06-03-at-12.54.16-PM-2.jpeg"
+                />
+                <div class="card-description">
+                  <div class="card-title">
+                    <h4>Descripción</h4>
+                  </div>
+                  <div class="card-text">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Totam dolorum quisquam harum soluta voluptate quod quia
+                      pariatur quasi, aspernatur
+                    </p>
+                  </div>
+                  <div class="card-icons">
+                    <i class="fa-solid fa-toilet"></i>
+                    <i class="fa-solid fa-paw"></i>
+                    <i class="fa-solid fa-people-group"></i>
+                    <p>lorem ipsum dolor sit</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="container6">
-          <div class="icono6">
-            <i class="fa-solid fa-shower"></i>
-          </div>
-          <div class="parrafo6">
-            <p class="subtitulo">
-              Baños y sanitarios altamente equipados y confortables
-            </p>
-          </div>
-        </div>
-        <div class="container6">
-          <div class="icono6">
-            <i class="fa-solid fa-wifi"></i>
-          </div>
-          <div class="parrafo6">
-            <p class="subtitulo">
-              Recepción abierta desde las 08:00h hasta las 12:00h de la noche
-            </p>
-          </div>
-        </div>
-        <div class="container6">
-          <div class="icono6">
-            <i class="fa-solid fa-water-ladder"></i>
-          </div>
-          <div class="parrafo6">
-            <p class="subtitulo">
-              Piscina e instalaciones deportivas para disfrute de todos
-            </p>
-          </div>
-        </div>
-        <div class="container6">
-          <div class="icono6">
-            <i class="fa-solid fa-utensils"></i>
-          </div>
-          <div class="parrafo6">
-            <p class="subtitulo">
-              Restaurante, cafetería, heladería, chiringuito y discoteca
-            </p>
-          </div>
-        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="../js/slider.js"></script>
       </div>
-      <div class="container6int">
+    </section>
+    <section>
+      <div class="container6ext">
+        <h1 class="titulo">SERVICIOS E INSTALACIONES</h1>
+        <p class="subtitulo">
+          Todo lo que necesitas a tu disposición, sin tener que salir del
+          camping.
+        </p>
+        <div class="container6int">
+          <div class="container6">
+            <div class="icono6">
+              <i class="fa-solid fa-wifi"></i>
+            </div>
+            <div class="parrafo6">
+              <p class="subtitulo">
+                Servicios incluidos, Wifi, supermercado, animación infantil
+              </p>
+            </div>
+          </div>
+          <div class="container6">
+            <div class="icono6">
+              <i class="fa-solid fa-shower"></i>
+            </div>
+            <div class="parrafo6">
+              <p class="subtitulo">
+                Baños y sanitarios altamente equipados y confortables
+              </p>
+            </div>
+          </div>
+          <div class="container6">
+            <div class="icono6">
+              <i class="fa-solid fa-wifi"></i>
+            </div>
+            <div class="parrafo6">
+              <p class="subtitulo">
+                Recepción abierta desde las 08:00h hasta las 12:00h de la noche
+              </p>
+            </div>
+          </div>
+          <div class="container6">
+            <div class="icono6">
+              <i class="fa-solid fa-water-ladder"></i>
+            </div>
+            <div class="parrafo6">
+              <p class="subtitulo">
+                Piscina e instalaciones deportivas para disfrute de todos
+              </p>
+            </div>
+          </div>
+          <div class="container6">
+            <div class="icono6">
+              <i class="fa-solid fa-utensils"></i>
+            </div>
+            <div class="parrafo6">
+              <p class="subtitulo">
+                Restaurante, cafetería, heladería, chiringuito y discoteca
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div class="d-grid gap-2 col-3 mx-auto">
-          <button class="btn btn-primary" type="button">VER MÁS</button>
+          <button class="btn btn-primary btn-lg" type="button">VER MÁS</button>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!--Prueba de api de google maps
+    </section>
+    <section>
+      <div class="container7ext">
+        <div class="container7int">
+          <div class="container7izq">
+            <p class="subtitulo">Opiniones</p>
+            <h1 class="titulo">MIRA LO QUE DICEN DE <span>NOSOTROS</span></h1>
+            <p class="subtitulo">
+              Nos gusta cuidar los detalles, los ambientes, que estéis cómod@s,
+              que descanséis y que disfrutéis de todas las ventajas de ir de
+              Camping. Nos gusta cuidar de vosotr@s.
+            </p>
+          </div>
+          <div class="container7dcha"></div>
+        </div>
+      </div>
+    </section>
+    <!--Prueba de api de google maps
     <section><div id="mapa"></div></section>
     -->
-</body>
-
+  </body>
 </html>
