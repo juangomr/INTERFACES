@@ -47,7 +47,7 @@ nav > ul {
   border: 2px solid #ffd42c;
 }
 
-.fa-solid {
+.iconoMundo .fa-solid {
   color: #485c54;
 }
 
@@ -346,7 +346,7 @@ li a:hover {
   height: 33%;
 }
 
-.swiper-slide img {
+.container .swiper-slide img {
   display: block;
   width: 100%;
   height: 360px;
@@ -430,13 +430,16 @@ li a:hover {
 }
 
 .container7int {
+  width: 100%;
+  height: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
 .container7izq {
   width: 50%;
+  height: auto;
   border-bottom: 1px solid white;
 }
 
@@ -444,5 +447,73 @@ li a:hover {
   font-style: italic;
 }
 
+/* Swiper 1 */
+
 .container7dcha {
+  width: 50%;
+  overflow: hidden;
+}
+.container7dcha .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.container7dcha .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #485c54;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2rem;
+}
+
+.swiper-slide .TripAdvisor {
+  width: 35% !important;
+  height: 4rem !important;
+  margin-bottom: 1rem;
+}
+
+.usuario {
+  display: flex;
+  flex-direction: row;
+}
+
+.descripcionUsuario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.fotoUsuario {
+  width: 35% !important;
+  height: 4rem !important;
+  margin-right: 1.5rem;
+}
+
+.usuario,
+.puntuacion .fa-solid {
+  color: #efede8;
+}
+
+.iconoLocal {
+  margin-right: 0.5rem;
+}
+
+.puntuacion {
+  padding-left: 2rem;
+}
+.descripcionUsuario .card-title {
+  color: #000;
+}
+
+.descripcionUsuario .card-text {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+.alinear {
+  text-align: left;
 }
