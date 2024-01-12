@@ -4,9 +4,9 @@ var swiper = new Swiper(".mySwiper1", {
     clickable: true,
     grabCursor: true,
   },
-  /*
+
   autoplay: {
     delay: 4000,
     disableOnInteraction: false,
-  },*/
+  },
 });

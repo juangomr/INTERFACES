@@ -333,7 +333,6 @@ li a:hover {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  cursor: grab;
 }
 
 .container .swiper-slide {
@@ -438,13 +437,21 @@ li a:hover {
 }
 
 .container7izq {
-  width: 50%;
+  width: 40%;
   height: auto;
-  border-bottom: 1px solid white;
+  margin-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .container7izq h1 {
   font-style: italic;
+}
+
+.container7izq .container7izqint {
+  width: 70%;
+  border-bottom: 1px solid white;
 }
 
 /* Swiper 1 */
@@ -465,13 +472,6 @@ li a:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 2rem;
-}
-
-.swiper-slide .TripAdvisor {
-  width: 35% !important;
-  height: 4rem !important;
-  margin-bottom: 1rem;
 }
 
 .usuario {
@@ -489,7 +489,7 @@ li a:hover {
 .fotoUsuario {
   width: 35% !important;
   height: 4rem !important;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 .usuario,
@@ -501,19 +501,13 @@ li a:hover {
   margin-right: 0.5rem;
 }
 
-.puntuacion {
-  padding-left: 2rem;
-}
 .descripcionUsuario .card-title {
-  color: #000;
+  color: black;
 }
 
 .descripcionUsuario .card-text {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  justify-content: center;
-}
-.alinear {
   text-align: left;
 }
