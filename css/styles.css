@@ -19,8 +19,6 @@ nav > ul {
   justify-content: space-evenly;
   gap: 20px;
   font-family: "Roboto", sans-serif;
-  border: 1px solid black;
-  background-color: #ffffff;
   list-style: none;
   font-size: large;
   width: 100%;
@@ -126,6 +124,10 @@ li a:hover {
   width: 100%;
 }
 
+.containerBotonesVideo input, .alojamiento {
+  padding-right: 0.8rem;
+}
+
 .containerBotonesVideo > * {
   width: 70%;
   height: 3rem;
@@ -150,7 +152,7 @@ li a:hover {
   gap: 2em;
   padding-right: 2em;
   position: fixed;
-  bottom: 9px;
+  bottom: 24px;
   right: 6px;
   z-index: 9;
 }
@@ -551,11 +553,29 @@ li a:hover {
   padding: 3em;
 }
 
-.foot2 .contenedorFooter .tituloFooter {
+.foot2 .contenedorFooter .titulo {
   color: #485c54;
+
+}
+
+.foot1 .contenedorFooter .subtitulo {
+  color: #485c54;
+font-weight: bold;
+}
+
+.foot1 .contenedorFooter .descripcionFooter i {
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  font-size: 3rem;
+}
+
+.foot1 .contenedorFooter .descripcionFooter i:hover {
+  cursor: pointer;
 }
 
 .foot2 .contenedorFooter .descripcionFooter i {
+  font-size: 1.5rem;
+
   margin-right: 0.5rem;
 }
 
@@ -574,9 +594,6 @@ li a:hover {
   height: 100%;
 }
 
-.Copyright {
-  color: white;
-}
 
 .contenedorFooter .descripcionFooter > ul {
   font-family: "Roboto", sans-serif;
@@ -588,4 +605,8 @@ li a:hover {
 
 .foot3 .contenedorFooter .descripcionFooter ul li {
   font-size: 1.2rem;
+}
+
+.logoFooter{
+  width: 80%;
 }
