@@ -13,17 +13,32 @@ body {
   box-sizing: border-box;
 }
 
-nav > ul {
+nav {
+  position: fixed;
+  display: block;
+  z-index: 99;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 20px;
-  font-family: "Roboto", sans-serif;
-  list-style: none;
-  font-size: large;
   width: 100%;
   height: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  font-size: 1.2rem;
   margin: 0;
+  gap: 50px;
+  width: auto;
 }
 
 .botonReserva {
@@ -31,6 +46,7 @@ nav > ul {
   color: #485c54;
   height: auto;
   width: auto;
+  font-size: 1.2rem;
   padding: 0.5rem;
   font-weight: 600;
   font-family: "Lato", sans-serif;
@@ -47,6 +63,11 @@ nav > ul {
 
 .iconoMundo .fa-solid {
   color: #485c54;
+  font-size: 3rem;
+}
+
+.iconoMundo .fa-bars {
+  display: none;
 }
 
 .fa-solid:hover {
@@ -68,8 +89,8 @@ li a:hover {
 }
 
 .logo {
-  height: 75px;
-  width: 15%;
+  height: 5rem;
+  width: 20%;
 }
 
 .logo:hover {
@@ -113,7 +134,7 @@ li a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 60%;
   z-index: 11;
 }
 
@@ -122,9 +143,11 @@ li a:hover {
   align-items: flex-end;
   justify-content: center;
   width: 100%;
+  font-family: "Lato", sans-serif;
 }
 
-.containerBotonesVideo input, .alojamiento {
+.containerBotonesVideo input,
+.alojamiento {
   padding-right: 0.8rem;
 }
 
@@ -208,13 +231,13 @@ li a:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.9fr;
   gap: 2em;
-  grid-template-areas: "1 2 3 4";
   z-index: 8;
 }
 
 .item-1 {
   position: relative;
   overflow: hidden;
+  height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
@@ -358,7 +381,9 @@ li a:hover {
 .container .card-description {
   padding: 1rem;
 }
-
+.container .card-description .card-title {
+  color: #485c54;
+}
 .container .card-description .card-title,
 .container .card-description .card-text {
   margin-bottom: 0.5rem;
@@ -372,6 +397,7 @@ li a:hover {
   gap: 1rem;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  align-items: baseline;
 }
 
 #mapa {
@@ -467,6 +493,10 @@ li a:hover {
   height: 100%;
 }
 
+.container7dcha .swiper-wrapper {
+  margin-bottom: 1rem;
+}
+
 .container7dcha .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -555,12 +585,11 @@ li a:hover {
 
 .foot2 .contenedorFooter .titulo {
   color: #485c54;
-
 }
 
 .foot1 .contenedorFooter .subtitulo {
   color: #485c54;
-font-weight: bold;
+  font-weight: bold;
 }
 
 .foot1 .contenedorFooter .descripcionFooter i {
@@ -575,7 +604,6 @@ font-weight: bold;
 
 .foot2 .contenedorFooter .descripcionFooter i {
   font-size: 1.5rem;
-
   margin-right: 0.5rem;
 }
 
@@ -594,7 +622,6 @@ font-weight: bold;
   height: 100%;
 }
 
-
 .contenedorFooter .descripcionFooter > ul {
   font-family: "Roboto", sans-serif;
   list-style: none;
@@ -607,6 +634,6 @@ font-weight: bold;
   font-size: 1.2rem;
 }
 
-.logoFooter{
+.logoFooter {
   width: 80%;
 }

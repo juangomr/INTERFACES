@@ -1,0 +1,113 @@
+@media (max-width: 1460px) {
+  .slogan {
+    font-size: 2.5cm;
+  }
+}
+
+@media (max-width: 1220px) {
+  .slogan {
+    font-size: 2cm;
+  }
+}
+
+@media (max-width: 1130px) {
+  .iconoMundo .fa-bars {
+    display: block;
+  }
+
+  .iconoMundo .fa-globe {
+    display: none;
+  }
+
+  .botonReserva {
+    display: none;
+  }
+  nav ul {
+    display: none;
+  }
+  .logo {
+    width: 30%;
+  }
+  .container2Video {
+    width: 70%;
+  }
+}
+
+@media (max-width: 990px) {
+  .slogan {
+    font-size: 1.5cm;
+  }
+  .container2Video {
+    width: 75%;
+  }
+}
+
+@media (max-width: 830px) {
+  .container2Video {
+    width: 80%;
+  }
+}
+
+@media (max-width: 750px) {
+  .container2Video {
+    width: 85%;
+  }
+}
+
+@media (max-width: 724px) {
+  .slogan {
+    font-size: 1.2cm;
+  }
+  .logo {
+    width: 35%;
+  }
+}
+
+@media (max-width: 700px) {
+  .container2Video {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container2Video {
+    width: 100%;
+  }
+}
+
+@media (max-width: 494px) {
+  .logo {
+    width: 50%;
+  }
+  .slogan {
+    font-size: 1cm;
+  }
+}
+
+@media (max-width: 386px) {
+  .slogan {
+    font-size: 0.6cm;
+  }
+  .logo {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .container4 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.9fr 0.9fr;
+  }
+  .containerItem2 {
+    max-height: 50%;
+  }
+
+  .item-1 {
+    height: auto;
+  }
+}
+@media (max-width: 737px) {
+  .container4 {
+    grid-template-columns: 1fr;
+  }
+}
