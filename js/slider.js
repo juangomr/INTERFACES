@@ -1,11 +1,10 @@
 var swiper = new Swiper(".swiper-container", {
-  slidesPerView: 3,
-  spaceBetween: 10,
+  
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
-    grabCursor: true,
   },
+  clickable: true,
+  grabCursor: true,
 
   breakpoints: {
     620: {
@@ -14,10 +13,10 @@ var swiper = new Swiper(".swiper-container", {
     },
     680: {
       slidesrPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
-    920: {
-      slidesPerView: 3,
+    980: {
+      slidesPerView: 2,
       spaceBetween: 20,
     },
     1240: {

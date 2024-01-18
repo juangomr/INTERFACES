@@ -74,7 +74,7 @@ nav ul {
   cursor: pointer;
 }
 
-li > a {
+li>a {
   color: black;
   text-decoration: none;
   text-align: center;
@@ -146,12 +146,16 @@ li a:hover {
   font-family: "Lato", sans-serif;
 }
 
+.containerBotones2Video {
+  display: none;
+}
+
 .containerBotonesVideo input,
 .alojamiento {
   padding-right: 0.8rem;
 }
 
-.containerBotonesVideo > * {
+.containerBotonesVideo>* {
   width: 70%;
   height: 3rem;
   text-align: center;
@@ -187,7 +191,7 @@ li a:hover {
   align-content: center;
   background-color: #fff;
   padding: 6px 9px;
-  border-radius: 30px;
+  border-radius: 110px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   border: 2px solid black;
   font-weight: 600;
@@ -208,12 +212,12 @@ li a:hover {
   color: black;
 }
 
-.botonInterior > i {
+.botonInterior>i {
   color: black;
   margin-left: 0.5em;
 }
 
-.botonInterior > span {
+.botonInterior>span {
   font-weight: bolder;
   font-size: larger;
 }
@@ -229,7 +233,8 @@ li a:hover {
 .container4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.9fr;
+  grid-template-rows: 1fr;
+
   gap: 2em;
   z-index: 8;
 }
@@ -250,39 +255,40 @@ li a:hover {
 .item2 {
   height: 100%;
   width: 100%;
-  transition: transform 0.5s ease-out;
-  transform-origin: center;
+  /*transition: transform 0.5s ease-out;
+  transform-origin: center;*/
 }
 
+/*
 .item2:hover {
   transition: transform 0.5s ease-in;
   transform: scale(1.2);
-}
+}*/
 
 .containerTexto {
-  padding: 1em;
+  padding: 0;
+  padding-bottom: 0;
 }
 
 .textoContainer4 {
   color: white;
-  position: absolute;
   text-decoration: none;
-  background-image: linear-gradient(currentColor, currentColor);
+ /* background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size 0.3s;
+  background-repeat: no-repeat;*/
+  /* background-size: 0% 2px;
+  transition: background-size 0.3s;*/
   font-weight: 500;
   font-family: "Lato", sans-serif;
   font-size: 2rem;
 }
 
+/*
 .textoContainer4:hover {
   background-size: 100% 2px;
-}
+}*/
 
 .parrafoContainer4 {
-  margin-top: 3em;
   font-family: "Lato", sans-serif;
 }
 
@@ -381,9 +387,11 @@ li a:hover {
 .container .card-description {
   padding: 1rem;
 }
+
 .container .card-description .card-title {
   color: #485c54;
 }
+
 .container .card-description .card-title,
 .container .card-description .card-text {
   margin-bottom: 0.5rem;
@@ -488,6 +496,7 @@ li a:hover {
   width: 50%;
   overflow: hidden;
 }
+
 .container7dcha .swiper {
   width: 100%;
   height: 100%;
@@ -622,7 +631,7 @@ li a:hover {
   height: 100%;
 }
 
-.contenedorFooter .descripcionFooter > ul {
+.contenedorFooter .descripcionFooter>ul {
   font-family: "Roboto", sans-serif;
   list-style: none;
   width: 100%;

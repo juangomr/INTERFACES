@@ -1,3 +1,5 @@
+/*containerVideo y Menú*/
+
 @media (max-width: 1460px) {
   .slogan {
     font-size: 2.5cm;
@@ -6,7 +8,7 @@
 
 @media (max-width: 1220px) {
   .slogan {
-    font-size: 2cm;
+    font-size: 2.4cm;
   }
 }
 
@@ -22,12 +24,15 @@
   .botonReserva {
     display: none;
   }
+
   nav ul {
     display: none;
   }
+
   .logo {
     width: 30%;
   }
+
   .container2Video {
     width: 70%;
   }
@@ -35,8 +40,9 @@
 
 @media (max-width: 990px) {
   .slogan {
-    font-size: 1.5cm;
+    font-size: 2cm;
   }
+
   .container2Video {
     width: 75%;
   }
@@ -56,8 +62,9 @@
 
 @media (max-width: 724px) {
   .slogan {
-    font-size: 1.2cm;
+    font-size: 1.8cm;
   }
+
   .logo {
     width: 35%;
   }
@@ -67,45 +74,76 @@
   .container2Video {
     width: 90%;
   }
-}
 
-@media (max-width: 600px) {
-  .container2Video {
-    width: 100%;
+  .containerBotonesVideo {
+    display: none;
+  }
+
+  .containerBotones2Video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: larger;
+    background-color: #ffd42c;
+  }
+
+  .containerBotones2Video a {
+    color: black;
+    text-decoration: none;
   }
 }
+
+
 
 @media (max-width: 494px) {
   .logo {
     width: 50%;
   }
+
   .slogan {
-    font-size: 1cm;
+    font-size: 1.1cm;
   }
 }
 
 @media (max-width: 386px) {
   .slogan {
-    font-size: 0.6cm;
+    font-size: 0.8cm;
   }
+
   .logo {
     width: 60%;
   }
 }
 
+/*container3*/
+@media (max-width: 600px) {
+  .container3 span {
+    display: none;
+  }
+
+  .container3 .botonInterior i {
+    margin-left: 0;
+
+  }
+}
+
+
+
+/*container4*/
 @media (max-width: 1500px) {
   .container4 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.9fr 0.9fr;
   }
-  .containerItem2 {
-    max-height: 50%;
-  }
 
-  .item-1 {
-    height: auto;
-  }
 }
+
 @media (max-width: 737px) {
   .container4 {
     grid-template-columns: 1fr;
