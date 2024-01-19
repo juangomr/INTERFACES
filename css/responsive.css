@@ -119,6 +119,10 @@
   .logo {
     width: 60%;
   }
+
+  .containerBotones2Video h1 {
+    font-size: 1.4rem;
+  }
 }
 
 /*container3*/
@@ -148,4 +152,39 @@
   .container4 {
     grid-template-columns: 1fr;
   }
+}
+
+/*container5*/
+
+@media (max-width:990px) {
+  .parrafoPreSlider {
+    display: none;
+  }
+}
+
+@media (max-width:790px) {
+  .container5int {
+    gap: 0;
+  }
+}
+
+@media (max-width:490px) {
+  .container5int {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boton {
+    margin: 0;
+  }
+}
+
+/*container6*/
+@media (max-width:1024px) {
+  .container6 {
+
+    width: calc(100% / 2);
+  }
+
 }
