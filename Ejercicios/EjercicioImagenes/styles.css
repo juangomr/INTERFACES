@@ -1,0 +1,14 @@
+.uno {
+  width: 50%;
+  height: 2000px;
+}
+
+.dos {
+  width: 50%;
+  height: 2000px;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+}
