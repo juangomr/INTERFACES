@@ -154,6 +154,18 @@
   }
 }
 
+@media (max-width: 350px) {
+  .parrafoContainer4 {
+
+    font-size: 0.5rem;
+  }
+
+  .textoContainer4 {
+
+    font-size: 1.5rem;
+  }
+}
+
 /*container5*/
 
 @media (max-width:990px) {
@@ -185,6 +197,97 @@
   .container6 {
 
     width: calc(100% / 2);
+  }
+
+}
+
+@media (max-width:600px) {
+  .container6 {
+
+    width: calc(100% / 1);
+  }
+
+  .icono6 {
+    font-size: 6rem;
+  }
+
+  .parrafo6 {
+    width: 80%;
+    font-size: 1.5em;
+  }
+}
+
+/*container7*/
+
+@media (max-width:1024px) {
+  .container7izqint {
+    width: 100%;
+  }
+
+  .container7ext {
+    padding: 2em;
+  }
+}
+
+@media (max-width:835px) {
+
+  .container7dcha {
+    width: 100%;
+    align-items: center;
+  }
+
+  .container7izq {
+    width: 100%;
+    margin-bottom: 3rem;
+    align-items: center;
+  }
+
+  .container7izq .container7izqint {
+    width: 100%;
+  }
+}
+
+@media (max-width:1024px) {
+  .container8ext {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .foot1 {
+    width: 50%;
+  }
+
+  .foot2 {
+    width: 50%;
+
+  }
+
+  .foot3 {
+    width: 100%;
+  }
+
+  .foot4 {
+    width: 100%;
+  }
+
+}
+
+@media (max-width:700px) {
+
+  .foot1 {
+    width: 100%;
+  }
+
+  .foot2 {
+    width: 100%;
+
+  }
+
+  .contenedorFooterAbajo {
+    padding: 1rem;
+    font-size: 0.8rem;
   }
 
 }
