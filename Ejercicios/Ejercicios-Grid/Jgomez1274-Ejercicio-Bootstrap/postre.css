@@ -1,0 +1,40 @@
+.miImagen {
+  width: 10%;
+}
+
+.miMenu,
+.recetas,
+.contenedorFooter {
+  background-color: #333 !important;
+}
+
+.miImagen2 {
+  height: 225px;
+}
+
+.col-2 {
+  margin-top: 1rem !important ;
+  margin-bottom: 1rem !important ;
+}
+
+body {
+  background-image: url("https://img.freepik.com/foto-gratis/vista-superior-harina-abierta-huevo-naranja-jugo-lima-mermelada-rebanada-pan-ralladura-naranja-cuchara-batidora-rallador-cascara-huevo-sobre-fondo-negro_141793-130544.jpg?w=740&t=st=1706120152~exp=1706120752~hmac=618bbb92a5aca92aa3deb295a29c660ada75daf7899c7a64c71d7bd32d7bf248");
+}
+
+.estrella {
+  margin-right: 3.5rem;
+}
+
+.container-fluid {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+footer {
+  padding-left: 2rem;
+  color: white;
+}
+
+.blanco {
+  color: white !important;
+}
