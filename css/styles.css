@@ -11,17 +11,12 @@ body {
 }
 
 nav {
-  position: fixed;
-  display: block;
-  z-index: 99;
-  background-color: #ffffff;
-  width: 100%;
-}
-
-nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  position: fixed;
+  z-index: 99;
+  background-color: #ffffff;
   width: 100%;
   height: auto;
 }
@@ -71,7 +66,7 @@ nav ul {
   cursor: pointer;
 }
 
-li>a {
+li > a {
   color: black;
   text-decoration: none;
   text-align: center;
@@ -152,7 +147,7 @@ li a:hover {
   padding-right: 0.8rem;
 }
 
-.containerBotonesVideo>* {
+.containerBotonesVideo > * {
   width: 70%;
   height: 3rem;
   text-align: center;
@@ -209,12 +204,12 @@ li a:hover {
   color: black;
 }
 
-.botonInterior>i {
+.botonInterior > i {
   color: black;
   margin-left: 0.5em;
 }
 
-.botonInterior>span {
+.botonInterior > span {
   font-weight: bolder;
   font-size: larger;
 }
@@ -226,16 +221,13 @@ li a:hover {
   background-color: #485c54;
   color: #fff;
   text-align: center;
-
 }
-
 
 .container4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   z-index: 8;
   margin-top: 2rem;
-
 }
 
 .item-1 {
@@ -379,7 +371,6 @@ li a:hover {
 .container .card-description .card-text {
   margin-bottom: 0.5rem;
   font-family: "Lato", sans-serif;
-
 }
 
 .container .card-description .card-icons {
@@ -452,7 +443,6 @@ li a:hover {
   display: flex;
   flex-direction: row;
   font-family: "Lato", sans-serif;
-
 }
 
 .container7int {
@@ -461,7 +451,7 @@ li a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 .container7izq {
@@ -552,7 +542,6 @@ li a:hover {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 0.2fr;
   font-family: "Lato", sans-serif;
-
 }
 
 .foot1 {
@@ -626,7 +615,7 @@ li a:hover {
   height: 100%;
 }
 
-.contenedorFooter .descripcionFooter>ul {
+.contenedorFooter .descripcionFooter > ul {
   font-family: "Roboto", sans-serif;
   list-style: none;
   width: 100%;

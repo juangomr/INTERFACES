@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Lato:ital,wght@0,400;1,900&display=swap");
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Lato', sans-serif;
+clave api: AIzaSyBgO4RHfFL2jeebWxd782foattL9GDl6co*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  z-index: 99;
+  background-color: #ffffff;
+  width: 100%;
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  font-size: 1.2rem;
+  margin: 0;
+  gap: 50px;
+  width: auto;
+}
+
+.botonReserva {
+  border-radius: 30px;
+  color: #485c54;
+  height: auto;
+  width: auto;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  border: 2px solid black;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+.botonReserva:hover {
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+  color: #000;
+  background-color: #ffd42c;
+  border: 2px solid #ffd42c;
+}
+.enlaceBoton {
+  text-decoration: none;
+  color: black;
+}
+.iconoMundo .fa-solid {
+  color: #485c54;
+  font-size: 3rem;
+}
+
+.iconoMundo .fa-bars {
+  display: none;
+}
+
+.fa-solid:hover {
+  cursor: pointer;
+}
+
+li > a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 900;
+  transition: color 0.3s;
+}
+
+li a:hover {
+  cursor: pointer;
+  color: #485c54;
+  font-weight: bold;
+}
+
+.logo {
+  height: 5rem;
+  width: 20%;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.contenedorImagenPrincipal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  width: 100%;
+  height: auto;
+}
+
+.imagenPrincipal {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+}
+
+.containerVideo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.container2Video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  z-index: 11;
+}
+
+.containerBotonesVideo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+.containerBotones2Video {
+  display: none;
+}
+
+.containerBotonesVideo > * {
+  width: 70%;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  border: 1px solid black;
+  height: 3rem;
+}
+
+.containerBotonesVideo :last-child {
+  font-weight: bold;
+  font-size: larger;
+  background-color: #ffd42c;
+}
+
+.slogan {
+  color: white;
+  text-shadow: 4px 4px 4px #333;
+  text-align: center;
+  font-style: italic;
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+  font-size: 3cm;
+  line-height: 1.2;
+  margin: 0;
+}
