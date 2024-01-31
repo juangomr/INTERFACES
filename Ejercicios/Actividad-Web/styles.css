@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header div {
+    width: 100%;
+    background-color: black;
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 3rem;
+}
+
+header div i {
+    margin-right: 2rem;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding: 3rem;
+}
+
+section .texto {
+    font-size: 3rem;
+    font-weight: bold;
+    width: 70%;
+
+}
+
+section .texto p {
+    margin: 0;
+}
+
+section .emoticonos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 30%;
+    font-size: 2.5rem;
+}
+
+.fa-cart-shopping {
+    margin-left: 3rem;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.containerItem {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+
+.titulo {
+    font-weight: bold;
+    color: blue;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.redes1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100%/4);
+    font-size: 2rem;
+    background-color: blue;
+    height: 100px;
+
+}
+
+.redes2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: calc(100%/4);
+    font-size: 2rem;
+    background-color: green;
+    height: 100px;
+
+}
+
+.redes3 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: calc(100%/4);
+    font-size: 2rem;
+    background-color: cornflowerblue;
+    height: 100px;
+
+}
+
+.redes4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: calc(100%/4);
+    background-color: crimson;
+    font-size: 2rem;
+    height: 100px;
+
+}

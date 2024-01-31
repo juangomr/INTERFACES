@@ -1,0 +1,45 @@
+@media (max-width: 330px) {
+    section {
+        padding: 1rem;
+
+    }
+
+    section .texto {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    section .emoticonos {
+        justify-content: flex-start;
+        gap: 10px;
+        width: 100%;
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    .container {
+        padding: 1rem;
+
+    }
+
+    .containerItem {
+        width: 100%;
+    }
+
+    .redes1 {
+        width: 100%;
+    }
+
+    .redes2 {
+        width: 100%;
+    }
+
+    .redes3 {
+        width: 100%;
+    }
+
+    .redes4 {
+        width: 100%;
+    }
+
+}
