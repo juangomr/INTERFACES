@@ -157,6 +157,5 @@ main {
 
 .face {
   position: relative;
-  padding-left: 2em; /* Espacio para el ícono */
   overflow: hidden;
 }
