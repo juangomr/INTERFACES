@@ -28,9 +28,9 @@ body {
   position: relative;
 }
 
-.tiempo1{
+.tiempo1 {
   height: 2rem;
   width: 10%;
   border-bottom: 1px solid orange;
-  display: inline-flex;
+  display: inline;
 }

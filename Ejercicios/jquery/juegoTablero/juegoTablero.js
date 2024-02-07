@@ -1,12 +1,10 @@
 $(".cuadrado").hide();
 
 $(document).ready(function () {
-
   var tiempoIni, tiempoFin, tiempo;
   let contador = 0;
 
   $("button").click(empezar);
-
   function empezar() {
     $(this).hide();
     $(".container").css({
@@ -32,13 +30,15 @@ $(document).ready(function () {
   function reiniciar() {
     contador = 0;
     $(".cuadrado").hide();
-    $("button").show().html("Reiniciar");
-    $("button").click(empezar);
-
+    $("button").css({
+      position: "relative",
+      top: "45%",
+      left: "43%",
+    });
+    $("button").show().html("Reiniciar").off("click").on("click", empezar);
   }
 
   function juego() {
-
     contador++;
     if (contador <= 10) {
       if (contador == 1) {
@@ -48,10 +48,10 @@ $(document).ready(function () {
         tiempoFin = Date.now();
         tiempo = (tiempoFin - tiempoIni) / 1000;
         $(".tiempo1").html("<p>" + tiempo.toFixed(2) + " segundos</p>");
+        $(".cuadrado").off("mouseenter");
         reiniciar();
       }
       moverCuadrado();
     }
-
   }
 });
