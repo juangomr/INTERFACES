@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.containerPrincipal {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerPrincipal button {
+  font-weight: bold;
+  border: 1px solid black;
+  height: 4rem;
+  width: 6rem;
+  font-size: 1rem;
+}
+
+.containerSecundario {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.containerGris {
+  height: 100vh;
+  width: 40%;
+  background-color: #b1b1b1b1;
+}
+
+.containerLogin {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1rem;
+}
+
+.login p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+}
+
+.login input[type="text"] {
+  width: 80%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  height: 3rem;
+}
+
+.login input[type="radio"] {
+  margin-bottom: 1rem;
+}
+
+.inputInicial {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.inputMedio {
+  font-size: 1.5rem;
+  padding-left: 2%;
+  border: 1px solid #b1b1b1b1;
+}
+
+.iniciarSesion {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  background-color: #282830;
+}
+
+.login img {
+  width: 4%;
+  position: relative;
+  bottom: 3.5rem;
+  right: 6rem;
+}
+
+.login a {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: #282830;
+}
+
+.login i {
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 3.2rem;
+  left: 13rem;
+}
+
+@media (max-width: 600px) {
+  .containerGris {
+    display: none;
+  }
+
+  .containerLogin {
+    width: 100%;
+  }
+
+  .login {
+    width: 100%;
+  }
+
+  .login i {
+    font-size: 1.3rem;
+    bottom: 3rem;
+  }
+
+  .login img {
+    bottom: 3.5rem;
+  }
+}
