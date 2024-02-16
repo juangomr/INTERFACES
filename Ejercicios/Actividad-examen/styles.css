@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Lato:ital,wght@0,400;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgray;
+    z-index: 9999;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+}
+
+nav img {
+    width: 20%;
+    height: auto;
+    margin: 1rem;
+    ;
+}
+
+.section1 div {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 div img {
+    width: 100%;
+    object-fit: cover;
+    height: 85vh;
+}
+
+.section1 .texto {
+    z-index: 11;
+    position: absolute;
+    font-size: 3rem;
+}
+
+.cookies{
+    width: 100%;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorCookies {
+   width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.contenedorCookies .titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.titulo i {
+    font-size: 2rem;
+}
