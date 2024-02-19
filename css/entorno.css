@@ -234,14 +234,14 @@ li a:hover {
 .titulo {
   font-weight: 600;
   font-family: "Lato", sans-serif;
-  font-size: 2em;
+  font-size: 1.5rem;
   text-transform: uppercase;
   margin: 1rem;
 }
 
 .subtitulo {
   font-family: "Lato", sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   margin: 1rem;
 }
 
@@ -249,7 +249,7 @@ li a:hover {
   width: 100%;
   height: auto;
   padding: 3em;
-  background-color: #ffffff;
+  background-color: #efede8;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -276,6 +276,7 @@ li a:hover {
 }
 
 .icono5 {
+  color: #485c54;
   font-size: 3rem;
   transition: all 0.5s ease-out;
 }
@@ -294,7 +295,6 @@ li a:hover {
   width: 100%;
   height: auto;
   padding: 3em;
-  background-color: #efede8;
 }
 
 .container6int {
@@ -306,7 +306,6 @@ li a:hover {
 }
 
 .container6izq {
-  color: #485c54;
   text-align: left;
   width: 45%;
   padding: 2rem;
@@ -323,10 +322,17 @@ li a:hover {
   height: 600px;
 }
 
+.container6extGris {
+  width: 100%;
+  height: auto;
+  padding: 3em;
+  background-color: #efede8;
+  color: #485c54;
+}
+
 .container7ext {
   position: relative;
-  background: url("https://cdn.pixabay.com/photo/2013/07/25/01/31/forest-166733_1280.jpg")
-    no-repeat fixed;
+  background: url("../img/forest-166733_1280.jpg") no-repeat fixed;
   background-position: center center;
   background-size: cover;
   height: 60vh;
@@ -367,8 +373,7 @@ li a:hover {
 
 .container9ext {
   position: relative;
-  background: url("https://cdn.pixabay.com/photo/2020/05/31/09/21/bushcraft-5241937_1280.jpg")
-    no-repeat fixed;
+  background: url("../img/bushcraft-5241937_1280.jpg") no-repeat fixed;
   background-position: center center;
   background-size: cover;
   height: 60vh;
@@ -382,6 +387,7 @@ li a:hover {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 0.2fr;
   font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
 
 .foot1 {
@@ -421,13 +427,12 @@ li a:hover {
 }
 
 .foot1 .contenedorFooter .subtitulo {
-  color: #485c54;
   font-weight: bold;
 }
 
-.foot1 .contenedorFooter .descripcionFooter i {
+.foot1 .contenedorFooter .descripcionFooter > i {
   margin-top: 1rem;
-  margin-right: 0.5rem;
+  padding-left: 1rem;
   font-size: 3rem;
 }
 
@@ -435,7 +440,7 @@ li a:hover {
   cursor: pointer;
 }
 
-.foot2 .contenedorFooter .descripcionFooter i {
+.foot2 .contenedorFooter .descripcionFooter > i {
   font-size: 1.5rem;
   margin-right: 0.5rem;
 }
@@ -460,7 +465,7 @@ li a:hover {
   list-style: none;
   width: 100%;
   height: auto;
-  padding-left: 0;
+  padding-left: 1rem;
 }
 
 .foot3 .contenedorFooter .descripcionFooter ul li {
