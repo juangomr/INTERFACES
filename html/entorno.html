@@ -1,350 +1,385 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Camping Olontigi Nature | Descubre la belleza de la naturaleza
-    </title>
-    <link rel="shortcut icon" href="../img/icono-verde.png" />
-    <link rel="stylesheet" type="text/css" href="../css/entorno.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <img
-          class="logo"
-          src="../img/logotipo-verde.png"
-          alt="Logo del Camping"
-        />
-        <ul>
-          <li><a href="#">Entorno</a></li>
-          <li><a href="#">Alojamientos</a></li>
-          <li><a href="#">Instalaciones</a></li>
-          <li><a href="#">Actividades</a></li>
-        </ul>
-        <a class="enlaceBoton" target="_blank" href="#">
-          <div class="botonReserva">
-            <span>RESERVAR</span>
-          </div>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Camping Olontigi Nature | Descubre la belleza de la naturaleza
+  </title>
+  <link rel="shortcut icon" href="../img/icono-verde.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="../css/entorno.css" />
+  <link rel="stylesheet" type="text/css" href="../css/responsiveEntorno.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
 
-        <div class="iconoMundo">
-          <i class="fa-solid fa-globe fa-2xl"></i>
-          <i class="fa-solid fa-bars fa-2xl"></i>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">
+        <img class="logo" src="../img/logotipo-verde.png" alt="Logo del Camping" />
+      </a>
+      <ul>
+        <li><a href="entorno.html">Entorno</a></li>
+        <li><a href="alojamientos.html">Alojamientos</a></li>
+        <li><a href="instalaciones.html">Instalaciones</a></li>
+        <li><a href="actividades.html">Actividades</a></li>
+      </ul>
+      <a class="enlaceBoton" href="reserva.html">
+        <div class="botonReserva">
+          <span>RESERVAR</span>
         </div>
-      </nav>
-    </header>
-    <section>
-      <div class="container">
-        <img src="../img/people-2561455_1920.jpg" />
-        <div class="container2Video">
-          <p class="slogan">Entorno Emblemático</p>
-          <div class="containerBotonesVideo">
-            <input type="date" />
-            <input type="date" />
-            <select class="alojamiento" name="alojamientos">
-              <option value="Alojamientos">Tipo alojamiento</option>
-              <option value="parcela">Parcelas</option>
-              <option value="tienda">Tiendas</option>
-              <option value="bungalows">Bungalows</option>
-            </select>
-            <input type="text" value="VER PRECIOS" />
+      </a>
+
+      <div class="iconoMundo">
+        <i class="fa-solid fa-globe fa-2xl"></i>
+        <i class="fa-solid fa-bars fa-2xl"></i>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="contenedorPrincipal">
+      <img src="../img/people-2561455_1920.jpg" />
+      <div class="container2Video">
+        <p class="slogan">Entorno emblemático</p>
+        <div class="containerBotonesVideo">
+          <input type="date" id="FechaActual" />
+          <input type="date" id="FechaSalida" />
+          <select class="alojamiento" name="alojamientos">
+            <option value="Alojamientos">Tipo alojamiento</option>
+            <hr>
+            <option value="parcela">Parcelas</option>
+            <option value="tienda">Tiendas</option>
+            <option value="bungalows">Bungalows</option>
+          </select>
+          <button type="button"><a class="enlaceBoton" href="reserva.html">
+              VER PRECIOS
+            </a></button>
+        </div>
+        <div class="containerBotones2Video">
+          <a class="enlaceBoton" href="reserva.html">
+            <h1>RESERVAR AHORA</h1>
+          </a>
+        </div>
+      </div>
+  </section>
+  <section>
+    <div class="container3Ext">
+      <div class="container3">
+        <div class="botonExterior">
+          <a class="enlaceBoton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="botonInterior">
+              <span>Contacto</span>
+              <i class="fa-solid fa-location-dot fa-xl"></i>
+            </div>
+          </a>
+        </div>
+        <div class="botonExterior">
+          <a class="enlaceBoton" target="blank" href="tel:+34955750677">
+            <div class="botonInterior">
+              <span>955 75 06 77</span>
+              <i class="fa-solid fa-phone fa-xl"></i>
+            </div>
+          </a>
+        </div>
+        <div class="botonExterior">
+          <a class="enlaceBoton" target="blank" href="https://api.whatsapp.com/send?phone=34644725313&text=Hola!">
+            <div class="botonInterior">
+              <span>671 06 44 12</span>
+              <i class="fa-brands fa-whatsapp fa-xl"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container4ext">
+      <div class="container4">
+        <h1 class="titulo">Sumérgete en nuestro maravilloso entorno rural</h1>
+        <p class="subtitulo">
+          Descubre la belleza de la vida al aire libre mientras creas
+          recuerdos inolvidables bajo el cielo estrellado
+        </p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container5ext">
+      <div class="container5int">
+        <div class="container5">
+          <div class="icono5">
+            <i class="fa-solid fa-mountain-sun"></i>
           </div>
-          <div class="containerBotones2Video">
-            <a href="#">
-              <h1>RESERVAR AHORA</h1>
-            </a>
+          <div class="parrafo5">
+            <p class="subtitulo">Paisajes Pintorescos</p>
+          </div>
+        </div>
+        <div class="container5">
+          <div class="icono5">
+            <i class="fa-solid fa-crow"></i>
+          </div>
+          <div class="parrafo5">
+            <p class="subtitulo">Fauna Protegida</p>
+          </div>
+        </div>
+        <div class="container5">
+          <div class="icono5">
+            <i class="fa-regular fa-map"></i>
+          </div>
+          <div class="parrafo5">
+            <p class="subtitulo">Hábitats diversos</p>
+          </div>
+        </div>
+        <div class="container5">
+          <div class="icono5">
+            <i class="fa-solid fa-tree"></i>
+          </div>
+          <div class="parrafo5">
+            <p class="subtitulo">Flora Endémica</p>
+          </div>
+        </div>
+        <div class="container5">
+          <div class="icono5">
+            <i class="fa-solid fa-seedling"></i>
+          </div>
+          <div class="parrafo5">
+            <p class="subtitulo">Conexión Naturaleza</p>
           </div>
         </div>
       </div>
-    </section>
-    <section>
-      <div class="container3Ext">
-        <div class="container3">
-          <div class="botonExterior">
-            <a class="enlaceBoton" target="_blank" href="#">
-              <div class="botonInterior">
-                <span>Contacto</span>
-                <i class="fa-solid fa-location-dot fa-xl"></i>
-              </div>
-            </a>
-          </div>
-          <div class="botonExterior">
-            <a class="enlaceBoton" target="blank" href="tel:+34955750677">
-              <div class="botonInterior">
-                <span>955 75 06 77</span>
-                <i class="fa-solid fa-phone fa-xl"></i>
-              </div>
-            </a>
-          </div>
-          <div class="botonExterior">
-            <a
-              class="enlaceBoton"
-              target="blank"
-              href="https://api.whatsapp.com/send?phone=34644725313&text=Hola!"
-            >
-              <div class="botonInterior">
-                <span>671 06 44 12</span>
-                <i class="fa-brands fa-whatsapp fa-xl"></i>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container4ext">
-        <div class="container4">
-          <h1 class="titulo">Sumérgete en nuestro maravilloso entorno rural</h1>
+    </div>
+  </section>
+  <section>
+    <div class="container6ext">
+      <div class="container6int">
+        <div class="container6izq">
+          <h1 class="titulo">Paisajes Inolvidables</h1>
           <p class="subtitulo">
-            Descubre la belleza de la vida al aire libre mientras creas
-            recuerdos inolvidables bajo el cielo estrellado
+            Descubre la serenidad de un atardecer inolvidable en nuestro
+            encantador camping rural. Mientras el sol se retira lentamente en
+            el horizonte, transforma el cielo en una paleta de tonos cálidos y
+            dorados, pintando un cuadro único cada tarde.
+          </p>
+          <p class="subtitulo">
+            Imagina relajarte en medio de la naturaleza virgen, sintiendo la
+            brisa suave y disfrutando del espectáculo celestial que ofrece
+            nuestro camping. En este rincón tranquilo, cada atardecer se
+            convierte en un momento mágico, donde el estrés del día se
+            disuelve y te sumerges en la paz que solo un entorno rural puede
+            brindar. Ya sea que estés acampando en pareja, en familia o en
+            solitario, nuestros atardeceres crean recuerdos que perduran para
+            siempre.
+          </p>
+          <p class="subtitulo">
+            Te imaginas compartiendo risas alrededor de una fogata, bajo el
+            telón de un cielo pintado con los tonos más asombrosos? En nuestro
+            camping, cada atardecer es una experiencia única, una oportunidad
+            de reconectar con la naturaleza y disfrutar de la belleza simple
+            pero impresionante que nos rodea.
+          </p>
+        </div>
+        <div class="container6dcha">
+          <img src="../img/landscape-1192669_640.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container7ext"></div>
+  </section>
+  <section>
+    <div class="container6extGris">
+      <div class="container6int">
+        <div class="container6izq">
+          <h1 class="titulo">Simbiosis Con La Naturaleza</h1>
+          <p class="subtitulo">
+            Vive la simbiosis perfecta con la naturaleza en nuestro acogedor
+            camping rural, donde cada detalle está diseñado para celebrar la
+            armonía entre el ser humano y el entorno natural de Doñana. En
+            este refugio sostenible, experimentarás una conexión auténtica con
+            la tierra y disfrutarás de una simbiosis que transforma tu
+            experiencia de camping.
+          </p>
+          <p class="subtitulo">
+            Nuestro camping, arraigado en principios de sostenibilidad, te
+            invita a participar en la preservación activa del ecosistema de
+            Doñana. Desde prácticas de conservación hasta actividades
+            respetuosas con la fauna y la flora, cada momento se convierte en
+            una oportunidad para contribuir al bienestar de este santuario
+            natural.
+          </p>
+          <p class="subtitulo">
+            Imagina levantarte con el sol y respirar el aire fresco impregnado
+            de la esencia de la naturaleza circundante. Explora senderos
+            cuidadosamente trazados que te llevan a través de paisajes
+            diversos, descubriendo la riqueza de la flora y la fauna que
+            comparten este hábitat único contigo.
+          </p>
+        </div>
+        <div class="container6dcha">
+          <img src="../img/conectar-con-naturaleza_edbc15d9_230908133046_1280x720 (1).jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container9ext"></div>
+  </section>
+  <section>
+    <div class="container8ext">
+      <div class="container8int">
+        <div class="container8izq">
+          <img src="../img/lynx-8229077_960_720.png" alt="" />
+        </div>
+        <div class="container8dcha">
+          <h1 class="titulo">Fauna salvaje</h1>
+          <p class="subtitulo">
+            Embárcate en una aventura única y descubre la riqueza de la fauna
+            en Doñana desde la comodidad de nuestro camping rural. En este
+            paraíso natural, cada día es un encuentro cercano con la vida
+            salvaje que te dejará sin aliento.
+          </p>
+          <p class="subtitulo">
+            Imagina despertar con el canto melodioso de aves que llaman a
+            Doñana su hogar. Desde majestuosos flamencos rosados que danzan en
+            las marismas hasta la gracia del ciervo ibérico que se desplaza
+            entre los bosques, cada momento es una oportunidad para presenciar
+            la maravilla de la vida salvaje.
+          </p>
+          <p class="subtitulo">
+            Nuestro camping ofrece una puerta de entrada a la biodiversidad
+            única de Doñana. Con suerte, podrás avistar aves migratorias
+            mientras descansan en las lagunas, o seguir las huellas de
+            animales que deambulan por los senderos. Cada rincón esconde
+            sorpresas, desde pequeñas criaturas que se ocultan en la maleza
+            hasta imponentes rapaces que surcan los cielos.
           </p>
         </div>
       </div>
-    </section>
-    <section>
-      <div class="container5ext">
-        <div class="container5int">
-          <div class="container5">
-            <div class="icono5">
-              <i class="fa-solid fa-mountain-sun"></i>
-            </div>
-            <div class="parrafo5">
-              <p class="subtitulo">Paisajes Pintorescos</p>
-            </div>
+    </div>
+  </section>
+  <div id="mapa"></div>
+  <footer>
+    <div class="container10ext">
+      <div class="foot1">
+        <div class="contenedorFooter">
+          <img class="logoFooter" src="../img/logotipo-negro.png" alt="Logo del Camping" />
+          <p class="subtitulo">Descubre la belleza de la naturaleza</p>
+          <div>
+            <h1 class="titulo">SIGUENOS EN</h1>
           </div>
-          <div class="container5">
-            <div class="icono5">
-              <i class="fa-solid fa-crow"></i>
-            </div>
-            <div class="parrafo5">
-              <p class="subtitulo">Fauna Protegida</p>
-            </div>
-          </div>
-          <div class="container5">
-            <div class="icono5">
-              <i class="fa-regular fa-map"></i>
-            </div>
-            <div class="parrafo5">
-              <p class="subtitulo">Hábitats diversos</p>
-            </div>
-          </div>
-          <div class="container5">
-            <div class="icono5">
-              <i class="fa-solid fa-tree"></i>
-            </div>
-            <div class="parrafo5">
-              <p class="subtitulo">Flora Endémica</p>
-            </div>
-          </div>
-          <div class="container5">
-            <div class="icono5">
-              <i class="fa-solid fa-seedling"></i>
-            </div>
-            <div class="parrafo5">
-              <p class="subtitulo">Conexión Naturaleza</p>
-            </div>
+          <div class="descripcionFooter">
+            <i class="fa-brands fa-square-twitter fa-xl"></i>
+            <i class="fa-brands fa-square-facebook fa-xl"></i>
+            <i class="fa-brands fa-square-instagram fa-xl"></i>
+            <i class="fa-brands fa-square-youtube fa-xl"></i>
           </div>
         </div>
       </div>
-    </section>
-    <section>
-      <div class="container6ext">
-        <div class="container6int">
-          <div class="container6izq">
-            <h1 class="titulo">Paisajes Inolvidables</h1>
-            <p class="subtitulo">
-              Descubre la serenidad de un atardecer inolvidable en nuestro
-              encantador camping rural. Mientras el sol se retira lentamente en
-              el horizonte, transforma el cielo en una paleta de tonos cálidos y
-              dorados, pintando un cuadro único cada tarde.
-            </p>
-            <p class="subtitulo">
-              Imagina relajarte en medio de la naturaleza virgen, sintiendo la
-              brisa suave y disfrutando del espectáculo celestial que ofrece
-              nuestro camping. En este rincón tranquilo, cada atardecer se
-              convierte en un momento mágico, donde el estrés del día se
-              disuelve y te sumerges en la paz que solo un entorno rural puede
-              brindar. Ya sea que estés acampando en pareja, en familia o en
-              solitario, nuestros atardeceres crean recuerdos que perduran para
-              siempre.
-            </p>
-            <p class="subtitulo">
-              Te imaginas compartiendo risas alrededor de una fogata, bajo el
-              telón de un cielo pintado con los tonos más asombrosos? En nuestro
-              camping, cada atardecer es una experiencia única, una oportunidad
-              de reconectar con la naturaleza y disfrutar de la belleza simple
-              pero impresionante que nos rodea.
-            </p>
+      <div class="foot2">
+        <div class="contenedorFooter">
+          <div>
+            <h1 class="titulo">CONTACTO</h1>
           </div>
-          <div class="container6dcha">
-            <img src="../img/landscape-1192669_640.jpg" alt="" />
+          <div class="descripcionFooter">
+            <i class="fa-regular fa-envelope"></i>
+            <p class="subtitulo">Ctra. Aznalcázar KM. 3200 Sevilla 41849</p>
           </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container7ext"></div>
-    </section>
-    <section>
-      <div class="container6extGris">
-        <div class="container6int">
-          <div class="container6izq">
-            <h1 class="titulo">Simbiosis Con La Naturaleza</h1>
-            <p class="subtitulo">
-              Vive la simbiosis perfecta con la naturaleza en nuestro acogedor
-              camping rural, donde cada detalle está diseñado para celebrar la
-              armonía entre el ser humano y el entorno natural de Doñana. En
-              este refugio sostenible, experimentarás una conexión auténtica con
-              la tierra y disfrutarás de una simbiosis que transforma tu
-              experiencia de camping.
-            </p>
-            <p class="subtitulo">
-              Nuestro camping, arraigado en principios de sostenibilidad, te
-              invita a participar en la preservación activa del ecosistema de
-              Doñana. Desde prácticas de conservación hasta actividades
-              respetuosas con la fauna y la flora, cada momento se convierte en
-              una oportunidad para contribuir al bienestar de este santuario
-              natural.
-            </p>
-            <p class="subtitulo">
-              Imagina levantarte con el sol y respirar el aire fresco impregnado
-              de la esencia de la naturaleza circundante. Explora senderos
-              cuidadosamente trazados que te llevan a través de paisajes
-              diversos, descubriendo la riqueza de la flora y la fauna que
-              comparten este hábitat único contigo.
-            </p>
+          <div class="descripcionFooter">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="subtitulo">consultas@camping-olontigi.com</p>
           </div>
-          <div class="container6dcha">
-            <img
-              src="../img/conectar-con-naturaleza_edbc15d9_230908133046_1280x720 (1).jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container9ext"></div>
-    </section>
-    <section>
-      <div class="container8ext">
-        <div class="container8int">
-          <div class="container8izq">
-            <img src="../img/lynx-8229077_960_720.png" alt="" />
-          </div>
-          <div class="container8dcha">
-            <h1 class="titulo">Fauna salvaje</h1>
-            <p class="subtitulo">
-              Embárcate en una aventura única y descubre la riqueza de la fauna
-              en Doñana desde la comodidad de nuestro camping rural. En este
-              paraíso natural, cada día es un encuentro cercano con la vida
-              salvaje que te dejará sin aliento.
-            </p>
-            <p class="subtitulo">
-              Imagina despertar con el canto melodioso de aves que llaman a
-              Doñana su hogar. Desde majestuosos flamencos rosados que danzan en
-              las marismas hasta la gracia del ciervo ibérico que se desplaza
-              entre los bosques, cada momento es una oportunidad para presenciar
-              la maravilla de la vida salvaje.
-            </p>
-            <p class="subtitulo">
-              Nuestro camping ofrece una puerta de entrada a la biodiversidad
-              única de Doñana. Con suerte, podrás avistar aves migratorias
-              mientras descansan en las lagunas, o seguir las huellas de
-              animales que deambulan por los senderos. Cada rincón esconde
-              sorpresas, desde pequeñas criaturas que se ocultan en la maleza
-              hasta imponentes rapaces que surcan los cielos.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <footer>
-      <div class="container10ext">
-        <div class="foot1">
-          <div class="contenedorFooter">
-            <img
-              class="logoFooter"
-              src="../img/logotipo-negro.png"
-              alt="Logo del Camping"
-            />
-            <p class="subtitulo">Descubre la belleza de la naturaleza</p>
-            <div>
-              <h1 class="titulo">SIGUENOS EN</h1>
-            </div>
-            <div class="descripcionFooter">
-              <i class="fa-brands fa-square-twitter fa-xl"></i>
-              <i class="fa-brands fa-square-facebook fa-xl"></i>
-              <i class="fa-brands fa-square-instagram fa-xl"></i>
-              <i class="fa-brands fa-square-youtube fa-xl"></i>
-            </div>
+          <div>
+            <h1 class="titulo">RECEPCIÓN</h1>
           </div>
-        </div>
-        <div class="foot2">
-          <div class="contenedorFooter">
-            <div>
-              <h1 class="titulo">CONTACTO</h1>
-            </div>
-            <div class="descripcionFooter">
-              <i class="fa-regular fa-envelope"></i>
-              <p class="subtitulo">Ctra. Aznalcázar KM. 3200 Sevilla 41849</p>
-            </div>
-            <div class="descripcionFooter">
-              <i class="fa-solid fa-location-dot"></i>
-              <p class="subtitulo">consultas@camping-olontigi.com</p>
-            </div>
-
-            <div>
-              <h1 class="titulo">RECEPCIÓN</h1>
-            </div>
-            <div class="descripcionFooter">
-              <p class="subtitulo">
-                Estaremos encantados de atenderte y ayudarte de lunes a domingo
-                desde las 8 de la mañana hasta las 10 de la noche
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="foot3">
-          <div class="contenedorFooter">
-            <div>
-              <h1 class="titulo">MATERIAL LEGAL</h1>
-            </div>
-            <div class="descripcionFooter">
-              <ul>
-                <li><a href="#">Política de Privacidad</a></li>
-                <li><a href="#">Política de Calidad</a></li>
-                <li><a href="#">Política Ambiental</a></li>
-                <li><a href="#">Política de Cancelación y Reembolso</a></li>
-                <li><a href="#">Reglamento Régimen Interior</a></li>
-                <li><a href="#">Medidas de Seguridad</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="foot4">
-          <div class="contenedorFooterAbajo">
-            <div class="tituloFooter">
-              <p class="subtitulo">
-                Copyright
-                <span class="Copyright"
-                  ><i class="fa-regular fa-copyright"></i
-                ></span>
-                2023 Camping Olontigi | Nature. Todos los derechos reservados
-              </p>
-            </div>
+          <div class="descripcionFooter">
+            <p class="subtitulo">
+              Estaremos encantados de atenderte y ayudarte de lunes a domingo
+              desde las 8 de la mañana hasta las 10 de la noche
+            </p>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+      <div class="foot3">
+        <div class="contenedorFooter">
+          <div>
+            <h1 class="titulo">MATERIAL LEGAL</h1>
+          </div>
+          <div class="descripcionFooter">
+            <ul>
+              <li><a href="cookies.html">Política de Privacidad</a></li>
+              <li><a href="cookies.html">Política de Calidad</a></li>
+              <li><a href="cookies.html">Política Ambiental</a></li>
+              <li><a href="cookies.html">Política de Cancelación y Reembolso</a></li>
+              <li><a href="cookies.html">Reglamento Régimen Interior</a></li>
+              <li><a href="cookies.html">Medidas de Seguridad</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="foot4">
+        <div class="contenedorFooterAbajo">
+          <div class="tituloFooter">
+            <p class="subtitulo">
+              Copyright
+              <span class="Copyright"><i class="fa-regular fa-copyright"></i></span>
+              2023 Camping Olontigi | Nature. Todos los derechos reservados
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Modal de contacto-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">¿En que podemos ayudarle?</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="form">
+            <div class="mb-3">
+              <label for="recipient-nombre" class="col-form-label">Nombre:</label>
+              <input type="text" class="form-control" id="recipient-nombre">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-apellidos" class="col-form-label">Apellidos:</label>
+              <input type="text" class="form-control" id="recipient-apellidos">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-email" class="col-form-label">Email:</label>
+              <input type="text" class="form-control" id="recipient-email">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Escriba un mensaje:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+            <div class="error" id="mensajeError"></div>
+          </form>
+          <div class="exito"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" id="botonEnviar">Enviar Mensaje</button>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+          integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgO4RHfFL2jeebWxd782foattL9GDl6co&callback=inicializarMapa"></script>
+        <script src="../js/script.js"></script>
+        <script src="../js/scriptContacto.js"></script>
+        <script src="../js/scriptFecha.js"></script>
+        <script src="../js/animacion.js"></script>
+
+</body>
+
 </html>

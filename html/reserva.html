@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Camping Olontigi Nature | Descubre la belleza de la naturaleza
+    </title>
+    <link rel="shortcut icon" href="../img/icono-verde.png" />
+
+    <link rel="stylesheet" type="text/css" href="../css/reserva.css" />
+    <link rel="stylesheet" type="text/css" href="../css/responsiveReserva.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="contenedorFormulario">
+
+        <form id="formulario">
+            <img src="../img/logotipo-verde.png" class="card-img-top" alt="logotipo" />
+
+            <h1>Camping Olontigi Nature</h1>
+            <div class="cierre">
+                <p><i>Empieza aquí tu aventura</i></p>
+
+                <input type="text" id="usuario" name="usuario" placeholder="Introduce tu nombre" />
+
+                <input type="email" id="correo" name="correo" placeholder="Introduce tu correo electrónico" />
+
+                <input type="text" id="direccion" name="direccion" placeholder="Introduce tu dirección" />
+
+                <input type="date" id="FechaActual" />
+                <input type="date" id="FechaSalida" />
+                <script>
+                    var fecha = new Date();
+                    document.getElementById("FechaActual").value = fecha.toJSON().slice(0, 10);
+
+                    var fechaSalida = new Date();
+                    var dias = 2
+                    fechaSalida.setDate(fecha.getDate() + dias);
+                    document.getElementById("FechaSalida").value = fechaSalida.toJSON().slice(0, 10);
+                </script>
+
+                <select>
+                    <option>Parcela</option>
+                    <option>Bungalow</option>
+                    <option>Tienda</option>
+
+                </select>
+                <div class="error" id="mensajeError"></div>
+
+                <button type="button" id="botonEnviar" class="botonFormulario">RESERVAR</button>
+            </div>
+            <div class="exito"></div>
+        </form>
+
+    </div>
+    <script>
+        let email = document.getElementById("correo");
+        let texto = document.getElementById("direccion");
+        let msj = document.getElementById("mensajeError");
+        let ok = false;
+        let btn = document.getElementById("botonEnviar").addEventListener("click", function () {
+            msj.innerHTML = "";
+            if (email.value.length == 0 || email.value == null) {
+                msj.innerHTML = "Por favor rellene el campo email";
+            }
+            if (texto.value.length == 0 || texto.value == null) {
+                msj.innerHTML += "<br>" + "Por favor rellene la direccion";
+            }
+            else {
+                ok = true;
+            }
+
+            if (ok) {
+                $(".cierre").slideUp("slow");
+
+                $(".exito").text("Reserva realizada con éxito");
+            }
+        }
+        )
+    </script>
+
+</body>
+
+</html>

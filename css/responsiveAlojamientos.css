@@ -1,0 +1,225 @@
+/*Menu y Container Video*/
+
+@media (max-width: 1460px) {
+    .slogan {
+        font-size: 2cm;
+    }
+}
+
+@media (max-width: 1220px) {
+    .slogan {
+        font-size: 1.7cm;
+    }
+}
+
+@media (max-width: 1130px) {
+    .iconoMundo .fa-bars {
+        display: block;
+    }
+
+    .iconoMundo .fa-globe {
+        display: none;
+    }
+
+    .botonReserva {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .logo {
+        width: 90%;
+    }
+
+    .container2Video {
+        width: 70%;
+    }
+}
+
+@media (max-width: 990px) {
+    .slogan {
+        font-size: 1.2cm;
+    }
+
+    .container2Video {
+        width: 75%;
+    }
+}
+
+@media (max-width: 830px) {
+    .container2Video {
+        width: 80%;
+    }
+}
+
+@media (max-width: 750px) {
+    .container2Video {
+        width: 85%;
+    }
+}
+
+@media (max-width: 724px) {
+    .slogan {
+        font-size: 1cm;
+    }
+
+
+}
+
+@media (max-width: 700px) {
+    .container2Video {
+        width: 90%;
+    }
+
+    .containerBotonesVideo {
+        display: none;
+    }
+
+    .containerBotones2Video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 3rem;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid black;
+        font-weight: bold;
+        font-size: larger;
+        background-color: #ffd42c;
+    }
+
+    .containerBotones2Video a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+
+
+@media (max-width: 494px) {
+
+
+    .slogan {
+        font-size: 0.8cm;
+    }
+}
+
+@media (max-width: 386px) {
+    .slogan {
+        font-size: 0.5cm;
+    }
+
+    .logo {
+        width: 60%;
+    }
+
+    .containerBotones2Video h1 {
+        font-size: 1.4rem;
+    }
+}
+
+/*container3*/
+@media (max-width: 600px) {
+    .container3 span {
+        display: none;
+    }
+
+    .container3 .botonInterior i {
+        margin-left: 0;
+
+    }
+}
+
+
+/*container5*/
+
+@media (max-width:1090px) {
+    .container5 {
+
+        width: calc(100% / 2);
+    }
+
+}
+
+@media (max-width:970px) {
+    .container5 {
+
+        width: calc(100% / 1);
+    }
+
+    .icono5 {
+        font-size: 6rem;
+    }
+
+    .parrafo5 {
+        width: 80%;
+        font-size: 1.5em;
+    }
+}
+
+/*container6*/
+
+@media(max-width:1024px) {
+    .container6int {
+        width: calc(99%/2);
+
+
+    }
+}
+
+@media(max-width:750px) {
+    .container6int {
+        width: 99%;
+    }
+
+}
+
+/*Footer*/
+
+@media (max-width:1024px) {
+    .container10ext {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .foot1 {
+        width: 50%;
+    }
+
+    .foot2 {
+        width: 50%;
+
+    }
+
+    .foot3 {
+        width: 100%;
+    }
+
+    .foot4 {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:700px) {
+
+    .foot1 {
+        width: 100%;
+    }
+
+    .foot2 {
+        width: 100%;
+
+    }
+
+    .contenedorFooterAbajo {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+}

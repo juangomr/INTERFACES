@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Camping Olontigi Nature | Descubre la belleza de la naturaleza
+  </title>
+  <link rel="shortcut icon" href="../img/icono-verde.png" />
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="../css/responsive.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+</head>
+
+<body>
+  <nav>
+    <img class="logo" src="../img/logotipo-verde.png" alt="Logo del Camping" />
+    <ul>
+      <li><a href="entorno.html">Entorno</a></li>
+      <li><a href="alojamientos.html">Alojamientos</a></li>
+      <li><a href="instalaciones.html">Instalaciones</a></li>
+      <li><a href="actividades.html">Actividades</a></li>
+    </ul>
+    <a class="enlaceBoton" href="reserva.html">
+      <div class="botonReserva">
+        <span>RESERVAR</span>
+      </div>
+    </a>
+
+    <div class="iconoMundo">
+      <i class="fa-solid fa-globe fa-2xl"></i>
+      <i class="fa-solid fa-bars fa-2xl"></i>
+    </div>
+  </nav>
+  <section>
+    <div class="containerVideo">
+      <div class="container2Video">
+        <p class="slogan">Camping, relax serenidad</p>
+        <div class="containerBotonesVideo">
+          <input type="date" id="FechaActual" />
+          <input type="date" id="FechaSalida" />
+          <select class="alojamiento" name="alojamientos">
+            <option value="Alojamientos">Tipo alojamiento</option>
+            <hr>
+            <option value="parcela">Parcelas</option>
+            <option value="tienda">Tiendas</option>
+            <option value="bungalows">Bungalows</option>
+          </select>
+          <a class="enlaceBoton" href="reserva.html">
+            <button type="button">
+              VER PRECIOS
+            </button></a>
+        </div>
+        <div class="containerBotones2Video">
+          <a class="enlaceBoton" href="reserva.html">
+            <h1>RESERVAR AHORA</h1>
+          </a>
+        </div>
+      </div>
+      <video id="video" loop autoplay preload muted>
+        <source src="../video/VideoCamping.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+  <section>
+    <div class="container3Ext">
+      <div class="container3">
+        <div class="botonExterior">
+          <a class="enlaceBoton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="botonInterior">
+              <span>Contacto</span>
+              <i class="fa-solid fa-location-dot fa-xl"></i>
+            </div>
+          </a>
+        </div>
+        <div class="botonExterior">
+          <a class="enlaceBoton" target="blank" href="tel:+34955750677">
+            <div class="botonInterior">
+              <span>955 75 06 77</span>
+              <i class="fa-solid fa-phone fa-xl"></i>
+            </div>
+          </a>
+        </div>
+        <div class="botonExterior">
+          <a class="enlaceBoton" target="blank" href="https://api.whatsapp.com/send?phone=34644725313&text=Hola!">
+            <div class="botonInterior">
+              <span>671 06 44 12</span>
+              <i class="fa-brands fa-whatsapp fa-xl"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container4exterior">
+      <h1 class="titulo">EXPERIENCIA OLONTIGI</h1>
+      <p class="subtitulo">Garantía de unas vacaciones inolvidables</p>
+      <div class="container4">
+        <a class="enl" href="entorno.html">
+          <div class="item-1">
+            <div class="containerItem2">
+              <img class="item2" src="../img/suspension-bridge-4765742_1280.jpg" alt="Logo del Camping" />
+            </div>
+            <div class="containerTexto">
+              <h1 class="textoContainer4">ENTORNO</h1>
+              <p class="parrafoContainer4">
+                Disfruta de la serenidad de nuestros bosques, la frescura del
+                aire y el susurro de las hojas te transportarán a un mundo
+                aparte.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="enl" href="actividades.html">
+
+          <div class="item-1">
+            <div class="containerItem2">
+              <img class="item2" src="../img/kayak-1914773_1920.jpg" alt="Logo del Camping" />
+            </div>
+            <div class="containerTexto">
+              <h1 class="textoContainer4">ACTIVIDADES</h1>
+
+              <p class="parrafoContainer4">
+                Nuestro camping tiene algo para ti. Desde itinerarios de
+                senderismo con vistas panorámicas hasta rutas de kayak para
+                disfrutar de momentos.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="enl" href="instalaciones.html">
+
+          <div class="item-1">
+            <div class="containerItem2">
+              <img class="item2" src="../img/swim-8110683_1280.jpg" alt="Logo del Camping" />
+            </div>
+            <div class="containerTexto">
+              <h1 class="textoContainer4">INSTALACIONES</h1>
+              <p class="parrafoContainer4">
+                Nuestras instalaciones permiten combinar el relax, el deporte y
+                el ocio. Piscina, restaurante, zona deportiva... descubre
+                Camping Olontigi.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="enl" href="alojamientos.html">
+
+          <div class="item-1">
+            <div class="containerItem2">
+              <img class="item2" src="../img/dog-2301935_1280.jpg" alt="Logo del Camping" />
+            </div>
+            <div class="containerTexto">
+              <h1 class="textoContainer4">MASCOTAS</h1>
+              <p class="parrafoContainer4">
+                Pasa tus vacaciones con la mejor compañia,¡la de tu mascota!
+                Están admitidas tanto en su alojamiento como en nuestras
+                instalaciones.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="container5ext">
+        <h1 class="titulo">DESCUBRE NUESTROS ALOJAMIENTOS</h1>
+        <p class="subtitulo">Tranquilidad, comodidad, desconexión</p>
+        <div class="container5int">
+          <div class="preSlider">
+            <div>
+              <img class="imgPreSlider" src="../img/Bunga-removebg-preview.png" alt="icono" />
+            </div>
+            <div>
+              <p class="parrafoPreSlider">BUNGALOWS</p>
+            </div>
+          </div>
+          <div class="preSlider">
+            <img class="imgPreSlider" src="../img/Glamp-removebg-preview.png" alt="icono" />
+
+            <p class="parrafoPreSlider">TIENDAS</p>
+          </div>
+          <div class="preSlider">
+            <img class="imgPreSlider" src="../img/parcelas-removebg-preview.png" alt="icono" />
+            <p class="parrafoPreSlider">PARCELAS</p>
+          </div>
+
+          <a class="enlaceAlojamientos" href="alojamientos.html">
+            <button class="btn btn-primary btn-lg boton" type="button">
+              VER TODOS
+            </button></a>
+        </div>
+
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../img/Sauceda-2048x1365.jpg" alt="Tienda de campaña" />
+              <div class="card-description">
+                <div class="card-subtitle">
+                  <h6>Glamping</h6>
+                </div>
+                <div class="card-title">
+                  <h4>SAUCEDA</h4>
+                </div>
+                <div class="card-text">
+                  <p>
+                    Alójate en una de nuestras tiendas más acogedoras y
+                    experimenta la sensación de flotar entre los árboles de un
+                    frondoso bosque andaluz, con un diseño rústico especial,
+                    que permite respirar un aire de exclusividad.
+                  </p>
+                </div>
+                <div class="card-icons">
+                  <i class="fa-solid fa-toilet"></i>
+                  <i class="fa-solid fa-paw"></i>
+                  <i class="fa-solid fa-people-group"></i>
+                  <p>2 personas</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/WhatsApp-Image-2022-06-03-at-12.54.16-PM-2.jpeg " alt="Tienda de campaña" />
+              <div class="card-description">
+                <div class="card-subtitle">
+                  <h6>Tienda</h6>
+                </div>
+                <div class="card-title">
+                  <h4>METIS</h4>
+                </div>
+                <div class="card-text">
+                  <p>
+                    ¿Quieres experimentar la sensación de acampar pero
+                    disfrutando de todas las comodidades? Elige la Tienda
+                    Metis, inspirada en una tienda africana, donde podrás
+                    disfrutar del placer de alojarte en medio de la
+                    naturaleza.
+                  </p>
+                </div>
+                <div class="card-icons">
+                  <i class="fa-solid fa-toilet"></i>
+                  <i class="fa-solid fa-paw"></i>
+                  <i class="fa-solid fa-people-group"></i>
+                  <p>4 personas <sup>.</sup> 2 habitaciones</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/036-1536x1219.jpg" alt="Bungalow" />
+              <div class="card-description">
+                <div class="card-subtitle">
+                  <h6>Bungalow</h6>
+                </div>
+                <div class="card-title">
+                  <h4>COTTAGE</h4>
+                </div>
+                <div class="card-text">
+                  <p>
+                    Disfruta de unas vacaciones perfectas en el nuevo Bungalow
+                    Cottage. Un bungalow premium repleto de comodidades y
+                    complementos que harán que tu estancia sea sencillamente
+                    perfecta.
+                  </p>
+                </div>
+                <div class="card-icons">
+                  <i class="fa-solid fa-toilet"></i>
+                  <i class="fa-solid fa-paw"></i>
+                  <i class="fa-solid fa-people-group"></i>
+                  <p>4 personas <sup>.</sup> 2 habitaciones</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/Tamaral.jpg" alt="Tienda de campaña" />
+              <div class="card-description">
+                <div class="card-subtitle">
+                  <h6>Tienda</h6>
+                </div>
+                <div class="card-title">
+                  <h4>TAMARAL</h4>
+                </div>
+                <div class="card-text">
+                  <p>
+                    La naturaleza y tú. Nuestra tienda Tamaral te ofrece la
+                    posibilidad de sentir la aventura a flor de piel. Inmersa
+                    en los más frondosos bosques andaluces, esta tienda te
+                    aporta la sencillez y la comodidad que buscáis.
+                  </p>
+                </div>
+                <div class="card-icons">
+                  <i class="fa-solid fa-toilet"></i>
+                  <i class="fa-solid fa-paw"></i>
+                  <i class="fa-solid fa-people-group"></i>
+                  <p>4 personas <sup>.</sup> 2 habitaciones</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="../img/palas-2-1250x1536.jpg" alt="Parcela" />
+              <div class="card-description">
+                <div class="card-subtitle">
+                  <h6>Parcela</h6>
+                </div>
+                <div class="card-title">
+                  <h4>ISIS</h4>
+                </div>
+                <div class="card-text">
+                  <p>
+                    Disfruta de unas brillantes vacaciones en nuestra parcela
+                    Premium, la más grande del camping, con dimensiones de más
+                    de 125 y una capacidad máxima de hasta seis personas.
+                    Acampa en mitad de nuestro precioso pinar.
+                  </p>
+                </div>
+                <div class="card-icons">
+                  <i class="fa-solid fa-toilet"></i>
+                  <i class="fa-solid fa-paw"></i>
+                  <i class="fa-solid fa-people-group"></i>
+                  <p>125m<sup>2 . </sup> 6 personas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container6ext">
+      <h1 class="titulo">SERVICIOS E INSTALACIONES</h1>
+      <p class="subtitulo">
+        Todo lo que necesitas a tu disposición, sin tener que salir del
+        camping.
+      </p>
+      <div class="container6int">
+        <div class="container6">
+          <div class="icono6">
+            <i class="fa-solid fa-wifi"></i>
+          </div>
+          <div class="parrafo6">
+            <p class="subtitulo">
+              Servicios incluidos, Wifi, supermercado, animación infantil
+            </p>
+          </div>
+        </div>
+        <div class="container6">
+          <div class="icono6">
+            <i class="fa-solid fa-shower"></i>
+          </div>
+          <div class="parrafo6">
+            <p class="subtitulo">
+              Baños y sanitarios altamente equipados y confortables
+            </p>
+          </div>
+        </div>
+        <div class="container6">
+          <div class="icono6">
+            <i class="fa-solid fa-wifi"></i>
+          </div>
+          <div class="parrafo6">
+            <p class="subtitulo">
+              Recepción abierta desde las 08:00h hasta las 12:00h de la noche
+            </p>
+          </div>
+        </div>
+        <div class="container6">
+          <div class="icono6">
+            <i class="fa-solid fa-water-ladder"></i>
+          </div>
+          <div class="parrafo6">
+            <p class="subtitulo">
+              Piscina e instalaciones deportivas para disfrute de todos
+            </p>
+          </div>
+        </div>
+        <div class="container6">
+          <div class="icono6">
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <div class="parrafo6">
+            <p class="subtitulo">
+              Restaurante, cafetería, heladería, chiringuito y discoteca
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 col-4 mx-auto">
+        <a class="enlaceBoton" href="instalaciones.html">
+          <button class="btn btn-primary btn-lg" type="button">VER MÁS</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container7ext">
+      <div class="container7int">
+        <div class="container7izq">
+          <div class="container7izqint">
+            <p class="subtitulo">Opiniones</p>
+            <h1 class="titulo">MIRA LO QUE DICEN DE NOSOTROS</h1>
+            <p class="subtitulo">
+              Nos gusta cuidar los detalles, los ambientes, que estéis
+              cómod@s, que descanséis y que disfrutéis de todas las ventajas
+              de ir de Camping. Nos gusta cuidar de vosotr@s.
+            </p>
+          </div>
+        </div>
+        <div class="container7dcha">
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="usuario">
+                  <img class="fotoUsuario" src="../img/girl-429380_1280-photoaidcom-cropped.jpg"
+                    alt="Imagen de perfil" />
+
+                  <div class="descripcionUsuario">
+                    <div class="card-title">
+                      <h4>Mariamrvcytz</h4>
+                    </div>
+                    <div class="card-text">
+                      <i class="iconoLocal fa-solid fa-location-dot fa-xl"></i>
+                      <p>Málaga, España</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="puntuacion">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                </div>
+
+                <div class="descripcionUsuario">
+                  <div class="card-title">
+                    <h4>Muy buena experiencia</h4>
+                  </div>
+                  <div class="card-text">
+                    <p>
+                      "La comodidad de un hotel y la experiencia de un
+                      camping. Tiendas limpias y cuidadas al detalle, bonita
+                      decoración. Nos facilitaron todo aquello que necesitamos
+                      durante la estancia. El equipo de Olontigi Nature muy
+                      amable y atento, dispuesto a ayudate en lo que
+                      necesites"
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="usuario">
+                  <img class="fotoUsuario" src="../img/concept-1868728_1280-photoaidcom-cropped(1).jpg"
+                    alt="Imagen de perfil" />
+                  <div class="descripcionUsuario">
+                    <div class="card-title">
+                      <h4>Victor B</h4>
+                    </div>
+                    <div class="card-text">
+                      <i class="iconoLocal fa-solid fa-location-dot fa-xl"></i>
+                      <p>Madrid, España</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="puntuacion">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                </div>
+
+                <div class="descripcionUsuario">
+                  <div class="card-title">
+                    <h4>Increible</h4>
+                  </div>
+                  <div class="card-text">
+                    <p>
+                      "Hemos estado solo un fin de semana y ha sido brutal. La
+                      tienda era perfecta, cuando llegamos no faltaba ni un
+                      detalle. Lo mejor es la atención de los empleados.
+                      Volveremos!!! P.d: La comida del restaurante del camping
+                      es una gozada."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="usuario">
+                  <img class="fotoUsuario" src="../img/concept-1868728_1280-photoaidcom-cropped.jpg"
+                    alt="Imagen de perfil" />
+                  <div class="descripcionUsuario">
+                    <div class="card-title">
+                      <h4>Isabelgval</h4>
+                    </div>
+                    <div class="card-text">
+                      <i class="iconoLocal fa-solid fa-location-dot fa-xl"></i>
+                      <p>Marbella, España</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="puntuacion">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                </div>
+
+                <div class="descripcionUsuario">
+                  <div class="card-title">
+                    <h4>Camping con comodidades y mucho encanto</h4>
+                  </div>
+                  <div class="card-text">
+                    <p>
+                      "En el camping puedes elegir las tiendas que ya tienen
+                      montadas, con mucho encanto y muy confortables, con
+                      cama, edredón, electricidad y hasta calefacción. En puro
+                      corazón de doñana, un entorno increíble lleno de árboles
+                      y fauna. Las instalaciones de las duchas y aseos muy
+                      limpias."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="usuario">
+                  <img class="fotoUsuario" src="../img/woman-1245817_1280-photoaidcom-cropped.jpg"
+                    alt="Imagen de perfil" />
+                  <div class="descripcionUsuario">
+                    <div class="card-title">
+                      <h4>Alba N</h4>
+                    </div>
+                    <div class="card-text">
+                      <i class="iconoLocal fa-solid fa-location-dot fa-xl"></i>
+                      <p>Murcia, España</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="puntuacion">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                </div>
+
+                <div class="descripcionUsuario">
+                  <div class="card-title">
+                    <h4>Perfecto</h4>
+                  </div>
+                  <div class="card-text">
+                    <p>
+                      "El camping es muy bonito, el personal es educado y te
+                      ayuda en cualquier momento. Las tiendas de campaña son
+                      tal y como salen en las fotos, los baños del camping muy
+                      bien. Perfecto."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div id="mapa"></div>
+  </section>
+
+  <footer>
+    <div class="container8ext">
+      <div class="foot1">
+        <div class="contenedorFooter">
+          <img class="logoFooter" src="../img/logotipo-negro.png" alt="Logo del Camping" />
+          <p class="subtitulo">Descubre la belleza de la naturaleza</p>
+          <div class="titulo">
+            <h1>SIGUENOS EN</h1>
+          </div>
+          <div class="descripcionFooter">
+            <i class="fa-brands fa-square-twitter fa-xl"></i>
+            <i class="fa-brands fa-square-facebook fa-xl"></i>
+            <i class="fa-brands fa-square-instagram fa-xl"></i>
+            <i class="fa-brands fa-square-youtube fa-xl"></i>
+          </div>
+        </div>
+      </div>
+      <div class="foot2">
+        <div class="contenedorFooter">
+          <div class="titulo">
+            <h1>CONTACTO</h1>
+          </div>
+          <div class="descripcionFooter">
+            <i class="fa-regular fa-envelope"></i>
+            <p class="subtitulo">Ctra. Aznalcázar KM. 3200 Sevilla 41849</p>
+          </div>
+          <div class="descripcionFooter">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="subtitulo">consultas@camping-olontigi.com</p>
+          </div>
+
+          <div class="titulo">
+            <h1>RECEPCIÓN</h1>
+          </div>
+          <div class="descripcionFooter">
+            <p class="subtitulo">
+              Estaremos encantados de atenderte y ayudarte de lunes a domingo
+              desde las 8 de la mañana hasta las 10 de la noche
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="foot3">
+        <div class="contenedorFooter">
+          <div class="titulo">
+            <h1>MATERIAL LEGAL</h1>
+          </div>
+          <div class="descripcionFooter">
+            <ul>
+              <li><a href="cookies.html">Política de Privacidad</a></li>
+              <li><a href="cookies.html">Política de Calidad</a></li>
+              <li><a href="cookies.html">Política Ambiental</a></li>
+              <li><a href="cookies.html">Política de Cancelación y Reembolso</a></li>
+              <li><a href="cookies.html">Reglamento Régimen Interior</a></li>
+              <li><a href="cookies.html">Medidas de Seguridad</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="foot4">
+        <div class="contenedorFooterAbajo">
+          <div class="tituloFooter">
+            <p class="subtitulo">
+              Copyright
+              <span class="Copyright"><i class="fa-regular fa-copyright"></i></span>
+              2023 Camping Olontigi | Nature. Todos los derechos reservados
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="../js/slider.js"></script>
+  <script src="../js/slider2.js"></script>
+
+  <!--Modal de contacto-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">¿En que podemos ayudarle?</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="form">
+            <div class="mb-3">
+              <label for="recipient-nombre" class="col-form-label">Nombre:</label>
+              <input type="text" class="form-control" id="recipient-nombre">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-apellidos" class="col-form-label">Apellidos:</label>
+              <input type="text" class="form-control" id="recipient-apellidos">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-email" class="col-form-label">Email:</label>
+              <input type="text" class="form-control" id="recipient-email">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Escriba un mensaje:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+            <div class="error" id="mensajeError"></div>
+          </form>
+          <div class="exito"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" id="botonEnviar">Enviar Mensaje</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="cookies">
+    <p>Bienvenido/a a Camping Olontigi Nature. Esta página utiliza cookies para mejorar la experiencia del usuario.
+      En esta <a href="cookies.html">política de cookies</a>, explicamos qué son las cookies, cómo las utilizamos en
+      nuestro
+      sitio web y las opciones
+      disponibles para usted en relación con el uso de cookies.</p>
+    <div class="botones">
+      <button class="btn btn-light aceptar">Aceptar</button>
+      <button class="btn btn-light aceptar">Cancelar</button>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgO4RHfFL2jeebWxd782foattL9GDl6co&callback=inicializarMapa"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/scriptContacto.js"></script>
+  <script src="../js/scriptFecha.js"></script>
+  <script src="../js/animacion.js"></script>
+  <script src="../js/scriptCookies.js"></script>
+
+</body>
+
+</html>

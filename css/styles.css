@@ -25,7 +25,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   list-style: none;
   font-size: 1.2rem;
   margin: 0;
@@ -66,12 +66,13 @@ nav ul {
   cursor: pointer;
 }
 
-li > a {
+nav ul li>a {
   color: black;
   text-decoration: none;
   text-align: center;
-  font-weight: 900;
+  font-weight: 400;
   transition: color 0.3s;
+
 }
 
 li a:hover {
@@ -109,6 +110,9 @@ li a:hover {
   font-family: "Lato", sans-serif;
   font-size: 3cm;
   line-height: 1.2;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s, transform 2s;
 }
 
 .containerVideo {
@@ -122,6 +126,9 @@ li a:hover {
 }
 
 .container2Video {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s, transform 2s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,7 +154,7 @@ li a:hover {
   padding-right: 0.8rem;
 }
 
-.containerBotonesVideo > * {
+.containerBotonesVideo>* {
   width: 70%;
   height: 3rem;
   text-align: center;
@@ -155,10 +162,13 @@ li a:hover {
   border: 1px solid black;
 }
 
-.containerBotonesVideo :last-child {
+.containerBotonesVideo button {
   font-weight: bold;
   font-size: larger;
   background-color: #ffd42c;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 .container3 {
@@ -204,14 +214,28 @@ li a:hover {
   color: black;
 }
 
-.botonInterior > i {
+.botonInterior>i {
   color: black;
   margin-left: 0.5em;
 }
 
-.botonInterior > span {
+.botonInterior>span {
   font-weight: bolder;
   font-size: larger;
+}
+
+.error {
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+
+
+.exito {
+  text-align: center;
+  font-weight: bold;
+  color: #485c54;
+  margin-bottom: 1rem;
 }
 
 .container4exterior {
@@ -228,6 +252,11 @@ li a:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   z-index: 8;
   margin-top: 2rem;
+}
+
+.enl {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .item-1 {
@@ -259,21 +288,40 @@ li a:hover {
   font-weight: 500;
   font-family: "Lato", sans-serif;
   font-size: 2rem;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s, transform 2s;
 }
 
 .parrafoContainer4 {
   font-family: "Lato", sans-serif;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s, transform 3s;
+}
+
+.enlaceAlojamientos {
+  color: white;
+  text-decoration: none;
+  margin-left: auto;
+
 }
 
 .titulo {
   font-weight: 600;
   font-family: "Lato", sans-serif;
   font-size: 2em;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s, transform 2s;
 }
 
 .subtitulo {
   font-family: "Lato", sans-serif;
   font-size: 1em;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s, transform 2s;
 }
 
 .container5ext {
@@ -320,7 +368,6 @@ li a:hover {
 }
 
 .boton {
-  margin-left: auto;
   width: 15rem;
   height: 3rem;
 }
@@ -359,6 +406,9 @@ li a:hover {
 
 .container .card-description {
   padding: 1rem;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s, transform 2s;
 }
 
 .container .card-description .card-title {
@@ -382,6 +432,9 @@ li a:hover {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   align-items: baseline;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s, transform 2s;
 }
 
 #mapa {
@@ -432,6 +485,9 @@ li a:hover {
   width: 50%;
   font-family: "Lato", sans-serif;
   font-size: 1em;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s, transform 2s;
 }
 
 .container7ext {
@@ -615,18 +671,38 @@ li a:hover {
   height: 100%;
 }
 
-.contenedorFooter .descripcionFooter > ul {
-  font-family: "Roboto", sans-serif;
+.contenedorFooter .descripcionFooter>ul {
+  font-family: "Lato", sans-serif;
   list-style: none;
   width: 100%;
   height: auto;
   padding-left: 0;
 }
 
-.foot3 .contenedorFooter .descripcionFooter ul li {
+.foot3 .contenedorFooter .descripcionFooter>ul li {
   font-size: 1.2rem;
+}
+
+.foot3 .contenedorFooter .descripcionFooter>ul li a {
+  text-decoration: none;
+  color: #000;
+
 }
 
 .logoFooter {
   width: 80%;
+}
+
+.cookies {
+  position: fixed;
+  width: 100%;
+  background-color: #000000;
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  z-index: 1000000;
+  bottom: 0;
+  opacity: 0.8;
 }

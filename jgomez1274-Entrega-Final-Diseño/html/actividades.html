@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Camping Olontigi Nature | Descubre la belleza de la naturaleza
+    </title>
+    <link rel="shortcut icon" href="../img/icono-verde.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="../css/actividades.css" />
+    <link rel="stylesheet" type="text/css" href="../css/responsiveEntorno.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img class="logo" src="../img/logotipo-verde.png" alt="Logo del Camping" />
+            </a>
+            <ul>
+                <li><a href="entorno.html">Entorno</a></li>
+                <li><a href="alojamientos.html">Alojamientos</a></li>
+                <li><a href="instalaciones.html">Instalaciones</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+            </ul>
+            <a class="enlaceBoton" href="reserva.html">
+                <div class="botonReserva">
+                    <span>RESERVAR</span>
+                </div>
+            </a>
+
+            <div class="iconoMundo">
+                <i class="fa-solid fa-globe fa-2xl"></i>
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="contenedorPrincipal">
+            <img src="../img/conil.webp" />
+            <div class="container2Video">
+                <p class="slogan">DIVERSIÓN Y AVENTURA</p>
+                <div class="containerBotonesVideo">
+                    <input type="date" id="FechaActual" />
+                    <input type="date" id="FechaSalida" />
+                    <select class="alojamiento" name="alojamientos">
+                        <option value="Alojamientos">Tipo alojamiento</option>
+                        <hr>
+                        <option value="parcela">Parcelas</option>
+                        <option value="tienda">Tiendas</option>
+                        <option value="bungalows">Bungalows</option>
+                    </select>
+                    <button type="button"><a class="enlaceBoton" href="reserva.html">
+                            VER PRECIOS
+                        </a></button>
+                </div>
+                <div class="containerBotones2Video">
+                    <a class="enlaceBoton" href="reserva.html">
+                        <h1>RESERVAR AHORA</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container3Ext">
+            <div class="container3">
+                <div class="botonExterior">
+                    <a class="enlaceBoton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class="botonInterior">
+                            <span>Contacto</span>
+                            <i class="fa-solid fa-location-dot fa-xl"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="botonExterior">
+                    <a class="enlaceBoton" target="blank" href="tel:+34955750677">
+                        <div class="botonInterior">
+                            <span>955 75 06 77</span>
+                            <i class="fa-solid fa-phone fa-xl"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="botonExterior">
+                    <a class="enlaceBoton" target="blank"
+                        href="https://api.whatsapp.com/send?phone=34644725313&text=Hola!">
+                        <div class="botonInterior">
+                            <span>671 06 44 12</span>
+                            <i class="fa-brands fa-whatsapp fa-xl"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container4ext">
+            <div class="container4">
+                <h1 class="titulo">ACTIVIDADES</h1>
+                <p class="subtitulo">
+                    ¡Bienvenidos a nuestro refugio familiar en la naturaleza, donde la diversión y la aventura se
+                    entrelazan en cada rincón de nuestro camping! </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container5ext">
+            <div class="container5int">
+                <div class="container5">
+                    <div class="icono5">
+                        <i class="fa-solid fa-person-walking"></i>
+                    </div>
+                    <div class="parrafo5">
+                        <p class="subtitulo">SENDERISMO</p>
+                    </div>
+                </div>
+                <div class="container5">
+                    <div class="icono5">
+                        <i class="fa-solid fa-bicycle"></i>
+                    </div>
+                    <div class="parrafo5">
+                        <p class="subtitulo">RUTAS EN BICI</p>
+                    </div>
+                </div>
+                <div class="container5">
+                    <div class="icono5">
+                        <i class="fa-solid fa-burger"></i>
+                    </div>
+                    <div class="parrafo5">
+                        <p class="subtitulo">BARBACOAS</p>
+                    </div>
+                </div>
+                <div class="container5">
+                    <div class="icono5">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <div class="parrafo5">
+                        <p class="subtitulo">DEPORTE</p>
+                    </div>
+                </div>
+                <div class="container5">
+                    <div class="icono5">
+                        <i class="fa-solid fa-binoculars"></i>
+                    </div>
+                    <div class="parrafo5">
+                        <p class="subtitulo">OBSERVAR AVES</p>
+                    </div>
+                </div>
+                <div class="container5">
+                    <div class="icono5">
+                        <i class="fa-solid fa-person-hiking"></i>
+                    </div>
+                    <div class="parrafo5">
+                        <p class="subtitulo">ALPINISMO</p>
+                    </div>
+                </div>
+                <div class="container5">
+                    <div class="icono5">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="parrafo5">
+                        <p class="subtitulo">NOCHES ESTRELLADAS</p>
+                    </div>
+                </div>
+                <div class="container5">
+                    <div class="icono5">
+                        <i class="fa-solid fa-film"></i>
+                    </div>
+                    <div class="parrafo5">
+                        <p class="subtitulo">CINE AL AIRE LIBRE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container6ext">
+            <div class="container6int">
+                <div class="container6izq">
+                    <h1 class="titulo">SENDERISMO</h1>
+                    <p class="subtitulo">
+
+                        ¡Sumérgete en una experiencia inolvidable de conexión con la naturaleza en nuestro camping,
+                        donde el senderismo se convierte en una aventura fascinante! En cada paso, descubre la magia de
+                        los senderos que serpentean a través de bosques exuberantes y paisajes pintorescos. Desde
+                        principiantes hasta amantes experimentados de la naturaleza, nuestro camping ofrece rutas para
+                        todos los niveles.
+
+                    </p>
+                    <p class="subtitulo">
+
+                        Déjate envolver por el aire fresco mientras te adentras en la serenidad de la naturaleza. Los
+                        senderos bien marcados te guiarán a través de bosques antiguos, cascadas murmurantes y vistas
+                        panorámicas que te dejarán sin aliento. Siente la calidez del sol filtrándose entre las copas de
+                        los árboles mientras exploras la diversidad de flora y fauna que habita en nuestro entorno.
+                    </p>
+
+                </div>
+                <div class="container6dcha">
+                    <img src="../img/16799149846473.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container8ext">
+            <div class="container8int">
+                <div class="container8izq">
+                    <img src="../img/haciendo-barbacoas-fiesta-amigos-al-aire-libre_67123-60.avif" alt="" />
+                </div>
+                <div class="container8dcha">
+                    <h1 class="titulo">BARBACOAS </h1>
+                    <p class="subtitulo">
+
+                        ¡Prepárate para una experiencia culinaria única en nuestro camping, donde las barbacoas se
+                        convierten en momentos de sabor, camaradería y diversión al aire libre! En nuestro rincón
+                        acogedor, te invitamos a desplegar tus habilidades culinarias y deleitar tu paladar con la magia
+                        de las brasas.
+
+                    </p>
+                    <p class="subtitulo">
+                        Con nuestras áreas especialmente equipadas para barbacoas, cada comida se transforma en una
+                        celebración al aire libre. Imagina el aroma tentador del carbón encendiéndose y el chisporroteo
+                        de la parrilla mientras preparas tus platos favoritos. Desde suculentas carnes marinadas hasta
+                        opciones vegetarianas frescas, el menú de la parrilla está lleno de posibilidades para todos los
+                        gustos.
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container6ext">
+            <div class="container6int">
+                <div class="container6izq">
+                    <h1 class="titulo">CICLOTURISMO</h1>
+                    <p class="subtitulo">
+
+                        ¡Prepárate para explorar la belleza natural en dos ruedas en nuestro camping, donde las rutas en
+                        bicicleta se convierten en emocionantes travesías llenas de descubrimientos! Nuestro terreno
+                        diverso ofrece el escenario perfecto para ciclistas de todos los niveles, desde principiantes
+                        hasta expertos, que buscan una aventura en dos ruedas.
+                    </p>
+                    <p class="subtitulo">
+
+                        Embárcate en rutas escénicas que te llevarán a través de bosques frondosos, senderos sinuosos y
+                        paisajes impresionantes. Las suaves colinas y los desafiantes ascensos proporcionan la
+                        combinación ideal para aquellos que buscan una experiencia única en bicicleta. Ya sea que
+                        prefieras un paseo relajado en familia o un desafío más intenso, nuestras rutas están diseñadas
+                        para satisfacer todas las expectativas.
+
+                    </p>
+
+                </div>
+                <div class="container6dcha">
+                    <img src="../img/ciclista-rodando-trazado-Via-Verde_1513058702_127173925_667x375.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container8ext">
+            <div class="container8int">
+                <div class="container8izq">
+                    <img src="../img/WhatsApp-Image-2022-03-02-at-11.36.24.jpeg" alt="" />
+                </div>
+                <div class="container8dcha">
+                    <h1 class="titulo">ALPINISMO</h1>
+                    <p class="subtitulo">
+
+                        ¡Descubre la emoción del alpinismo en nuestro camping! Nuestras montañas desafiantes ofrecen el
+                        telón de fondo perfecto para aventureros intrépidos. Equipado con rutas estimulantes y vistas
+                        panorámicas, nuestro terreno invita a los amantes del alpinismo a conquistar nuevas alturas.
+
+                    </p>
+                    <p class="subtitulo">
+                        Desde ascensos desafiantes hasta panoramas impresionantes, nuestro camping ofrece la combinación
+                        perfecta de aventura y paisajes impresionantes. Con guías experimentados, alquiler de equipo
+                        especializado y rutas diseñadas para todos los niveles, te proporcionamos la plataforma ideal
+                        para una experiencia alpina inolvidable.
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container6ext">
+            <div class="container6int">
+                <div class="container6izq">
+                    <h1 class="titulo">NOCHES ESTRELLADAS
+                    </h1>
+                    <p class="subtitulo">
+
+                        ¡Embárcate en un viaje celestial en nuestro camping, donde las noches estrelladas transforman el
+                        cielo en un espectáculo mágico! Lejos de las luces urbanas, nuestro rincón te invita a
+                        sumergirte en la maravilla del universo bajo un manto de estrellas resplandecientes.
+
+
+
+                    </p>
+                    <p class="subtitulo">
+                        Imagina relajarte en la serenidad de la noche, con la única compañía del suave murmullo de la
+                        naturaleza y el brillo infinito de las estrellas sobre ti. En nuestro camping, las noches
+                        estrelladas son mucho más que un espectáculo; son una experiencia que te conecta con la
+                        inmensidad del cosmos.
+
+                    </p>
+
+                </div>
+                <div class="container6dcha">
+                    <img src="../img/archivo1-fotos-1-12925109-a8ff4cb47b1870d0bccdafaf1f693169_1-3922298_20220822164931--1200x800.webp"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container8ext">
+            <div class="container8int">
+                <div class="container8izq">
+                    <img src="../img/Cine-al-aire-libre-en-el-Parque-de-las-VII-Sillas-5.jpg" alt="" />
+                </div>
+                <div class="container8dcha">
+                    <h1 class="titulo">CINE AL AIRE LIBRE</h1>
+                    <p class="subtitulo">
+                        ¡Bienvenido a nuestro cine al aire libre, donde la magia del cine se fusiona con la naturaleza
+                        para crear una experiencia única bajo las estrellas! En nuestro camping, las noches se llenan de
+                        emoción y entretenimiento mientras disfrutas de tus películas favoritas en un entorno al aire
+                        libre.
+                    </p>
+                    <p class="subtitulo">
+                        Imagina un anochecer rodeado de árboles y la suave brisa, mientras te acomodas en cómodas sillas
+                        o te envuelves en mantas bajo el cielo estrellado. Nuestra pantalla gigante proyecta historias
+                        cautivadoras que cobran vida en la tranquilidad de la naturaleza.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="mapa"></div>
+    <footer>
+        <div class="container10ext">
+            <div class="foot1">
+                <div class="contenedorFooter">
+                    <img class="logoFooter" src="../img/logotipo-negro.png" alt="Logo del Camping" />
+                    <p class="subtitulo">Descubre la belleza de la naturaleza</p>
+                    <div>
+                        <h1 class="titulo">SIGUENOS EN</h1>
+                    </div>
+                    <div class="descripcionFooter">
+                        <i class="fa-brands fa-square-twitter fa-xl"></i>
+                        <i class="fa-brands fa-square-facebook fa-xl"></i>
+                        <i class="fa-brands fa-square-instagram fa-xl"></i>
+                        <i class="fa-brands fa-square-youtube fa-xl"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="foot2">
+                <div class="contenedorFooter">
+                    <div>
+                        <h1 class="titulo">CONTACTO</h1>
+                    </div>
+                    <div class="descripcionFooter">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p class="subtitulo">Ctra. Aznalcázar KM. 3200 Sevilla 41849</p>
+                    </div>
+                    <div class="descripcionFooter">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="subtitulo">consultas@camping-olontigi.com</p>
+                    </div>
+
+                    <div>
+                        <h1 class="titulo">RECEPCIÓN</h1>
+                    </div>
+                    <div class="descripcionFooter">
+                        <p class="subtitulo">
+                            Estaremos encantados de atenderte y ayudarte de lunes a domingo
+                            desde las 8 de la mañana hasta las 10 de la noche
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="foot3">
+                <div class="contenedorFooter">
+                    <div>
+                        <h1 class="titulo">MATERIAL LEGAL</h1>
+                    </div>
+                    <div class="descripcionFooter">
+                        <ul>
+                            <li><a href="cookies.html">Política de Privacidad</a></li>
+                            <li><a href="cookies.html">Política de Calidad</a></li>
+                            <li><a href="cookies.html">Política Ambiental</a></li>
+                            <li><a href="cookies.html">Política de Cancelación y Reembolso</a></li>
+                            <li><a href="cookies.html">Reglamento Régimen Interior</a></li>
+                            <li><a href="cookies.html">Medidas de Seguridad</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="foot4">
+                <div class="contenedorFooterAbajo">
+                    <div class="tituloFooter">
+                        <p class="subtitulo">
+                            Copyright
+                            <span class="Copyright"><i class="fa-regular fa-copyright"></i></span>
+                            2023 Camping Olontigi | Nature. Todos los derechos reservados
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Modal de contacto-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">¿En que podemos ayudarle?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="form">
+                        <div class="mb-3">
+                            <label for="recipient-nombre" class="col-form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="recipient-nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-apellidos" class="col-form-label">Apellidos:</label>
+                            <input type="text" class="form-control" id="recipient-apellidos">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-email" class="col-form-label">Email:</label>
+                            <input type="text" class="form-control" id="recipient-email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Escriba un mensaje:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <div class="error" id="mensajeError"></div>
+                    </form>
+                    <div class="exito"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="botonEnviar">Enviar Mensaje</button>
+                    </div>
+                </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+                    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgO4RHfFL2jeebWxd782foattL9GDl6co&callback=inicializarMapa"></script>
+                <script src="../js/script.js"></script>
+                <script src="../js/scriptContacto.js"></script>
+                <script src="../js/scriptFecha.js"></script>
+                <script src="../js/animacion.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+@media (max-width: 780px) {
+
+    .contenedorCookies {
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .contenedorCookies {
+        width: 80%;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .contenedorCookies {
+        width: 90%;
+    }
+}

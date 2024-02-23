@@ -1,0 +1,21 @@
+@media (max-width: 780px) {
+
+    .contenedorFormulario form {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .contenedorFormulario form {
+        width: 65%;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .contenedorFormulario form {
+        width: 80%;
+    }
+}
